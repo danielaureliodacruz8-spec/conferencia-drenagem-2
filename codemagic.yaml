@@ -51,6 +51,7 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: stable
+      xcode: 27.2
     scripts:
       - name: Limpar artefatos antigos
         script: rm -rf build
@@ -85,6 +86,7 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: stable
+      xcode: 27.2
       ios_signing:
         distribution_type: development
         bundle_identifier: br.com.stratabasitec.conferenciadrenagem2
