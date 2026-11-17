@@ -1,0 +1,22 @@
+{
+  "project": "GO-110",
+  "stationFormat": "estaca+offset_em_metros",
+  "sourceDocument": "GO-110-PE-DR-082, páginas 95-96 do PDF de drenagem profunda/OAC",
+  "linearDrainRuns": [
+    {"type":"DPS08","start":"1595+16,08","end":"1600+01,74","side":"LD","lengthMeters":86.13},
+    {"type":"DPR02","start":"1616+00,37","end":"1623+13,40","side":"LE","lengthMeters":158.85},
+    {"type":"DPR02","start":"1615+17,33","end":"1622+03,23","side":"LD","lengthMeters":129.50},
+    {"type":"DPS08","start":"1848+07,51","end":"1856+07,91","side":"LD","lengthMeters":161.04},
+    {"type":"DPR02","start":"2065+17,63","end":"2079+10,36","side":"LD","lengthMeters":274.46},
+    {"type":"DPR02","start":"2070+12,20","end":"2077+00,17","side":"LE","lengthMeters":130.94},
+    {"type":"DSS04","start":"1603+18,02","end":"1603+18,02","side":"LE","lengthMeters":14.00},
+    {"type":"DSS04","start":"1795+17,72","end":"1795+17,72","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSS04","start":"2057+00,00","end":"2057+00,00","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSS04","start":"2089+07,61","end":"2089+07,61","side":"LE/LD","lengthMeters":14.01},
+    {"type":"DSS04","start":"2244+04,04","end":"2244+04,04","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSH01","start":"1618+04,97","end":"1621+15,31","side":"LE","levels":1,"spacingMeters":10,"drainCount":7,"lengthMeters":35.00},
+    {"type":"DSH01","start":"1618+08,00","end":"1620+14,00","side":"LD","levels":1,"spacingMeters":10,"drainCount":5,"lengthMeters":25.00}
+  ],
+  "notes": ["DSS04 stations are entry/reference stations with 14 m extension, as tabulated.", "DPS08 is named DPS14 in the quantity summary as a later code revision."]
+}
+

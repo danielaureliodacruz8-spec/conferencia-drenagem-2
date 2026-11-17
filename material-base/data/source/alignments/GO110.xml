@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd"
+         version="1.2"
+         date="2026-11-13"
+         time="11:38:00"
+         language="Portuguese">
+
+  <Units>
+    <Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter"
+            temperatureUnit="celsius" pressureUnit="HPA" diameterUnit="millimeter"
+            widthUnit="meter" heightUnit="meter" velocityUnit="metersPerSecond"
+            accelerationUnit="metersPerSecondPerSecond" angularUnit="decimal dd.mm.ss"
+            directionUnit="decimal dd.mm.ss"/>
+  </Units>
+
+  <CoordinateSystem name="SIRGAS 2000 / UTM zone 23S"
+                    epsgCode="31983"
+                    horizontalDatum="SIRGAS2000"
+                    verticalDatum="IMBITUBA"
+                    horizontalCoordinateSystemName="UTM23S"
+                    fileLocation=""/>
+
+  <Project name="GO-110 - Estiva / São Domingos"
+           desc="Projeto Executivo de Engenharia - Volume 1 - Projeto Geométrico Parcial (Est. 1500 a Est. 2249+14,221) - Contrato 131/2026-GOINFRA"/>
+
+  <Application name="Grok Alignment Extractor" version="1.0" manufacturer="xAI"/>
+
+  <Alignments name="Alinhamentos_GO110">
+
+    <Alignment name="Eixo_Principal_GO110"
+               length="14914.221"
+               staStart="1500.000"
+               desc="Alinhamento Horizontal - Rodovia GO-110 (15 km finais) - Est. 1500 a 2249+14.221"
+               state="proposed">
+
+      <CoordGeom>
+
+        <!-- ========== T26 - Tangente Inicial ========== -->
+        <Line dir="19.369578" length="1477.770">
+          <Start>349857.58000 8508753.57400</Start>
+          <End>350347.69720 8510147.70100</End>
+        </Line>
+
+        <!-- ========== C26 - Curva Circular R=800.000 ========== -->
+        <Curve rot="cw" radius="800.000" length="138.838" chord="138.663" crvType="arc">
+          <Start>350347.69720 8510147.70100</Start>
+          <Center>351102.41600 8509882.37300</Center>
+          <End>350404.85030 8510274.03810</End>
+          <PI>350370.77860 8510213.15550</PI>
+        </Curve>
+
+        <!-- ========== T27 ========== -->
+        <Line dir="29.313082" length="34.616">
+          <Start>350404.85030 8510274.03810</Start>
+          <End>350421.79780 8510304.32210</End>
+        </Line>
+
+        <!-- ========== E1 - Espiral de Entrada (Clotoide) ========== -->
+        <Spiral length="40.000" radiusEnd="240.000" radiusStart="0.0" rot="cw"
+                theta="4.774648" totalY="1.111" totalX="39.972"
+                tanLong="26.676" tanShort="13.342" spiType="clothoid">
+          <Start>350421.79780 8510304.32210</Start>
+          <PI>350434.85800 8510327.48300</PI>
+          <End>350440.39900 8510339.62000</End>
+        </Spiral>
+
+        <!-- ========== C27 - Curva Circular R=240.000 ========== -->
+        <Curve rot="cw" radius="240.000" length="68.994" chord="68.757" crvType="arc">
+          <Start>350440.39900 8510339.62000</Start>
+          <Center>350222.07500 8510439.29300</Center>
+          <End>350459.76020 8510405.61210</End>
+          <PI>350454.82500 8510371.21900</PI>
+        </Curve>
+
+        <!-- ========== E2 - Espiral de Saída ========== -->
+        <Spiral length="40.000" radiusStart="240.000" radiusEnd="0.0" rot="cw"
+                theta="4.774648" totalY="1.111" totalX="39.972"
+                tanLong="26.676" tanShort="13.342" spiType="clothoid">
+          <Start>350459.76020 8510405.61210</Start>
+          <PI>350461.57300 8510418.82200</PI>
+          <End>350463.10480 8510445.45460</End>
+        </Spiral>
+
+        <!-- ========== T28 ========== -->
+        <Line dir="3.292636" length="64.508">
+          <Start>350463.10480 8510445.45460</Start>
+          <End>350467.93650 8510529.82330</End>
+        </Line>
+
+        <!-- ========== C28A - Curva Circular R=600.000 ========== -->
+        <Curve rot="cw" radius="600.000" length="99.965" chord="99.850" crvType="arc">
+          <Start>350467.93650 8510529.82330</Start>
+          <Center>351066.96800 8510495.36200</Center>
+          <End>350481.96820 8510628.68550</End>
+          <PI>350470.83800 8510579.83390</PI>
+        </Curve>
+
+        <!-- ========== T28A ========== -->
+        <Line dir="12.838635" length="76.900">
+          <Start>350481.96820 8510628.68550</Start>
+          <End>350490.08580 8510703.66240</End>
+        </Line>
+
+        <!-- ========== C28B - Curva Circular R=600.000 ========== -->
+        <Curve rot="ccw" radius="600.000" length="63.090" chord="63.061" crvType="arc">
+          <Start>350490.08580 8510703.66240</Start>
+          <Center>349914.05600 8510836.98600</Center>
+          <End>350508.81780 8510765.79810</End>
+          <PI>350506.07170 8510734.44770</PI>
+        </Curve>
+
+        <!-- ========== T29 ========== -->
+        <Line dir="6.814000" length="362.803">
+          <Start>350508.81780 8510765.79810</Start>
+          <End>350552.83950 8511125.84030</End>
+        </Line>
+
+        <!-- ========== E3 - Espiral de Entrada ========== -->
+        <Spiral length="90.000" radiusEnd="263.000" radiusStart="0.0" rot="cw"
+                theta="9.803460" totalY="5.122" totalX="89.737"
+                tanLong="60.092" tanShort="30.084" spiType="clothoid">
+          <Start>350552.83950 8511125.84030</Start>
+          <PI>350559.96900 8511185.50800</PI>
+          <End>350568.57270 8511214.33560</End>
+        </Spiral>
+
+        <!-- ========== C29 - Curva Circular R=263.000 ========== -->
+        <Curve rot="cw" radius="263.000" length="389.392" chord="354.787" crvType="arc">
+          <Start>350568.57270 8511214.33560</Start>
+          <Center>350820.58900 8511139.12300</Center>
+          <End>350872.78960 8511396.89020</End>
+          <PI>350637.28900 8511444.58200</PI>
+        </Curve>
+
+        <!-- ========== E4 - Espiral de Saída ========== -->
+        <Spiral length="90.000" radiusStart="263.000" radiusEnd="0.0" rot="cw"
+                theta="9.803460" totalY="5.122" totalX="89.737"
+                tanLong="60.092" tanShort="30.084" spiType="clothoid">
+          <Start>350872.78960 8511396.89020</Start>
+          <PI>350902.27500 8511390.91900</PI>
+          <End>350958.28100 8511369.13800</End>
+        </Spiral>
+
+        <!-- ========== T30 ========== -->
+        <Line dir="111.251730" length="380.802">
+          <Start>350958.28100 8511369.13800</Start>
+          <End>351313.00060 8511231.18230</End>
+        </Line>
+
+        <!-- ========== C30 - Curva Circular R=560.000 ========== -->
+        <Curve rot="ccw" radius="560.000" length="463.345" chord="468.481" crvType="arc">
+          <Start>351313.00060 8511231.18230</Start>
+          <Center>351515.98200 8511753.10100</Center>
+          <End>351780.62030 8511259.57600</End>
+          <PI>351553.34830 8511137.70790</PI>
+        </Curve>
+
+        <!-- ========== T31 ========== -->
+        <Line dir="61.798809" length="426.027">
+          <Start>351780.62030 8511259.57600</Start>
+          <End>352156.07510 8511460.90330</End>
+        </Line>
+
+        <!-- ========== C31 - Curva Circular R=560.000 ========== -->
+        <Curve rot="cw" radius="560.000" length="454.993" chord="442.581" crvType="arc">
+          <Start>352156.07510 8511460.90330</Start>
+          <Center>352420.71400 8510967.37900</Center>
+          <End>352597.02210 8511498.90100</End>
+          <PI>352368.37590 8511574.74370</PI>
+        </Curve>
+
+        <!-- ========== T32 ========== -->
+        <Line dir="108.350931" length="360.986">
+          <Start>352597.02210 8511498.90100</Start>
+          <End>352939.65000 8511385.24920</End>
+        </Line>
+
+        <!-- ========== C32 - Curva Circular R=580.000 ========== -->
+        <Curve rot="ccw" radius="580.000" length="461.455" chord="449.381" crvType="arc">
+          <Start>352939.65000 8511385.24920</Start>
+          <Center>353122.25500 8511935.75400</Center>
+          <End>353387.68170 8511420.05130</End>
+          <PI>353170.97800 8511308.51700</PI>
+        </Curve>
+
+        <!-- ========== T33 ========== -->
+        <Line dir="62.765672" length="410.983">
+          <Start>353387.68170 8511420.05130</Start>
+          <End>353753.10390 8511608.12990</End>
+        </Line>
+
+        <!-- ========== C33 - Curva Circular R=480.000 ========== -->
+        <Curve rot="cw" radius="480.000" length="188.721" chord="187.508" crvType="arc">
+          <Start>353753.10390 8511608.12990</Start>
+          <Center>353972.76700 8511181.34200</Center>
+          <End>353933.37420 8511659.72240</End>
+          <PI>353838.10160 8511651.87710</PI>
+        </Curve>
+
+        <!-- ========== T34 ========== -->
+        <Line dir="85.292575" length="739.157">
+          <Start>353933.37420 8511659.72240</Start>
+          <End>354670.03990 8511720.38330</End>
+        </Line>
+
+        <!-- ========== C34 - Curva Circular R=560.000 ========== -->
+        <Curve rot="cw" radius="560.000" length="147.569" chord="147.143" crvType="arc">
+          <Start>354670.03990 8511720.38330</Start>
+          <Center>354715.99600 8511162.27200</Center>
+          <End>354817.00000 8511713.08820</End>
+          <PI>354744.00230 8511726.47390</PI>
+        </Curve>
+
+        <!-- ========== T35 ========== -->
+        <Line dir="100.390979" length="1321.179">
+          <Start>354817.00000 8511713.08820</Start>
+          <End>356116.51120 8511474.79480</End>
+        </Line>
+
+        <!-- ========== C35 - Curva Circular R=780.000 ========== -->
+        <Curve rot="cw" radius="780.000" length="227.467" chord="227.000" crvType="arc">
+          <Start>356116.51120 8511474.79480</Start>
+          <Center>356257.19500 8512242.00300</Center>
+          <End>356343.03030 8511466.73990</End>
+          <PI>356229.17930 8511454.13460</PI>
+        </Curve>
+
+        <!-- ========== T36 ========== -->
+        <Line dir="83.682100" length="228.171">
+          <Start>356343.03030 8511466.73990</Start>
+          <End>356560.81530 8511491.84990</End>
+        </Line>
+
+        <!-- ========== C36 - Curva Circular R=520.000 ========== -->
+        <Curve rot="cw" radius="520.000" length="842.681" chord="800.000" crvType="arc">
+          <Start>356560.81530 8511491.84990</Start>
+          <Center>357025.81720 8511552.01520</Center>
+          <End>357025.81720 8512091.74040</End>
+          <PI>357713.23800 8511552.01520</PI>
+        </Curve>
+
+        <!-- ========== T37 ========== -->
+        <Line dir="350.809892" length="111.511">
+          <Start>357025.81720 8512091.74040</Start>
+          <End>357008.10770 8512201.81990</End>
+        </Line>
+
+        <!-- ========== C37 - Curva Circular R=500.000 ========== -->
+        <Curve rot="cw" radius="500.000" length="203.654" chord="202.000" crvType="arc">
+          <Start>357008.10770 8512201.81990</Start>
+          <Center>356936.09410 8512303.75180</Center>
+          <End>356936.09410 8512390.81420</End>
+          <PI>356991.61620 8512303.75180</PI>
+        </Curve>
+
+        <!-- ========== T38 ========== -->
+        <Line dir="127.472833" length="1289.700">
+          <Start>356936.09410 8512390.81420</Start>
+          <End>356242.62290 8513478.20780</End>
+        </Line>
+
+        <!-- ========== C38 - Curva Circular R=580.000 ========== -->
+        <Curve rot="cw" radius="580.000" length="163.034" chord="162.500" crvType="arc">
+          <Start>356242.62290 8513478.20780</Start>
+          <Center>356175.30220 8513547.39370</Center>
+          <End>356175.30220 8513526.10410</End>
+          <PI>356198.50050 8513547.39370</PI>
+        </Curve>
+
+        <!-- ========== T39 ========== -->
+        <Line dir="343.578233" length="653.608">
+          <Start>356175.30220 8513526.10410</Start>
+          <End>356090.83700 8514253.04420</End>
+        </Line>
+
+        <!-- ========== C39 - Curva Circular R=560.000 ========== -->
+        <Curve rot="cw" radius="560.000" length="281.201" chord="278.000" crvType="arc">
+          <Start>356090.83700 8514253.04420</Start>
+          <Center>356078.81900 8514390.61950</Center>
+          <End>356078.81900 8514551.23220</End>
+          <PI>356549.97750 8514390.61950</PI>
+        </Curve>
+
+        <!-- ========== T40 ========== -->
+        <Line dir="11.356908" length="1662.845">
+          <Start>356078.81900 8514551.23220</Start>
+          <End>356320.06750 8516161.51810</End>
+        </Line>
+
+        <!-- ========== C40 - Curva Circular R=480.000 ========== -->
+        <Curve rot="cw" radius="480.000" length="254.116" chord="250.000" crvType="arc">
+          <Start>356320.06750 8516161.51810</Start>
+          <Center>356417.82370 8516289.08180</Center>
+          <End>356417.82370 8516396.24330</End>
+          <PI>356331.26900 8516289.08180</PI>
+        </Curve>
+
+        <!-- ========== T41 - Tangente Final ========== -->
+        <Line dir="41.689803" length="642.775">
+          <Start>356417.82370 8516396.24330</Start>
+          <End>356843.33400 8516866.24000</End>
+        </Line>
+
+      </CoordGeom>
+
+      <StaEquation staAhead="1500.000" staBack="0.000" staInternal="1500.000" desc="Início do trecho parcial"/>
+      <StaEquation staAhead="2249.14221" staBack="14914.221" staInternal="2249.14221" desc="Fim do trecho (início perímetro urbano São Domingos)"/>
+
+    </Alignment>
+  </Alignments>
+
+</LandXML>
+

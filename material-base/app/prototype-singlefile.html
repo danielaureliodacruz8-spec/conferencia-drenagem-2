@@ -1,0 +1,4187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102a36">
+<title>Marco — Fiscalização de Campo</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--ink:#182d35;--muted:#76858a;--line:#e7eceb;--paper:#f5f7f5;--white:#fff;--teal:#126b65;--lime:#c9e879;--nav:#102a36;--soft:#eaf3f0;--amber:#f2b562}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px 'DM Sans',sans-serif}button,input,select{font:inherit}button{cursor:pointer}.shell{display:flex;min-height:100vh}.side{width:252px;background:var(--nav);color:#e8f0ef;padding:25px 16px;display:flex;flex-direction:column;flex-shrink:0}.brand{display:flex;align-items:center;gap:11px;padding:3px 10px 34px}.mark{width:35px;height:35px;background:var(--lime);border-radius:11px;display:grid;place-items:center;color:var(--nav);font-weight:900;font-size:18px}.brand strong{font:800 19px Manrope;letter-spacing:-.7px}.brand small{display:block;color:#9aadaf;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-top:1px}.navlabel{font-size:10px;text-transform:uppercase;letter-spacing:1.6px;color:#82979b;padding:0 12px;margin:5px 0 11px}.nav{display:grid;gap:4px}.nav button{border:0;background:transparent;color:#b9c8c8;text-align:left;padding:12px;border-radius:9px;display:flex;align-items:center;gap:12px}.nav button:hover,.nav button.active{background:#1b3d48;color:white}.nav .icon{width:19px;text-align:center;font-size:16px}.sidefoot{margin-top:auto;border-top:1px solid #29434b;padding:19px 9px 0;color:#99abad;font-size:12px;line-height:1.6}.user{display:flex;align-items:center;gap:10px;margin-top:16px;color:#e3edeb}.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#294e54;color:#d8edc2;font-weight:700}.main{flex:1;min-width:0}.top{height:74px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 36px}.crumb{color:var(--muted);font-size:13px}.crumb b{color:var(--ink);font-weight:600}.topright{display:flex;gap:12px;align-items:center}.project{border:1px solid var(--line);background:white;border-radius:8px;padding:9px 12px;color:#34464b}.ping{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:#526469}.body{padding:33px 38px 55px;max-width:1440px;margin:auto}.heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:25px}.eyebrow{color:var(--teal);font-size:11px;text-transform:uppercase;letter-spacing:1.6px;font-weight:700;margin-bottom:8px}.heading h1{font:800 28px Manrope;margin:0;letter-spacing:-1px}.heading p{color:var(--muted);margin:7px 0 0}.primary{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:11px 16px;font-weight:600;box-shadow:0 4px 10px #126b6520}.primary:hover{background:#0d5954}.secondary{border:1px solid var(--line);background:#fff;border-radius:8px;padding:10px 14px;color:var(--ink);font-weight:600}.grid{display:grid;gap:16px}.stats{grid-template-columns:repeat(4,1fr);margin-bottom:19px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 2px 5px #12302c05}.stat{display:flex;justify-content:space-between;align-items:flex-start}.statlabel{color:var(--muted);font-size:12px}.statnum{font:700 26px Manrope;margin-top:8px;letter-spacing:-1px}.statnote{color:var(--teal);font-size:11px;margin-top:5px}.staticon{width:34px;height:34px;border-radius:9px;background:var(--soft);display:grid;place-items:center;color:var(--teal);font-size:16px}.middle{grid-template-columns:1.5fr 1fr;margin-bottom:17px}.cardhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.cardhead h2{font:700 15px Manrope;margin:0}.textlink{border:0;background:transparent;color:var(--teal);font-weight:600;font-size:12px}.sitebox{background:#eff5f1;border-radius:10px;padding:17px;display:flex;align-items:center;gap:14px;margin-bottom:15px}.siteico{width:42px;height:42px;background:white;border-radius:10px;display:grid;place-items:center;font-size:20px}.sitebox h3{font:700 14px Manrope;margin:0 0 4px}.sitebox p{color:var(--muted);font-size:12px;margin:0}.progresslabel{display:flex;justify-content:space-between;font-size:12px;color:#56686c;margin-bottom:8px}.bar{height:7px;background:#e6ece9;border-radius:7px;overflow:hidden}.bar i{height:100%;display:block;background:var(--teal);width:68%;border-radius:7px}.minirow{display:grid;grid-template-columns:1fr auto;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.minirow:last-child{border:0}.minirow strong{font-size:12px}.minirow span{font-size:11px;color:var(--muted)}.badge{border-radius:20px;background:#eef3e5;color:#537229;font-size:10px;padding:5px 9px}.tablecard{padding:0;overflow:hidden}.tabletitle{padding:17px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.tabletitle h2{font:700 15px Manrope;margin:0}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:650px}th{text-transform:uppercase;font-size:10px;letter-spacing:.8px;text-align:left;color:#829096;background:#fafbfa;padding:12px 20px}td{padding:14px 20px;border-top:1px solid #eef1ef;font-size:12px}td small{display:block;color:var(--muted);margin-top:3px}.tag{display:inline-block;border-radius:14px;padding:5px 9px;font-size:10px;background:#edf5ee;color:#36745f}.tag.wait{background:#fff4e4;color:#9a661c}.empty{padding:30px;text-align:center;color:var(--muted)}.view{display:none}.view.active{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:600;color:#405258}.field input,.field select{border:1px solid #dfe7e4;border-radius:8px;padding:11px 12px;background:white;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#64a49a;box-shadow:0 0 0 3px #126b6515}.hint{font-size:11px;color:var(--muted)}.formactions{display:flex;gap:9px;margin-top:20px}.notice{padding:12px 14px;border-radius:8px;background:#eef5f2;color:#41635a;font-size:12px;line-height:1.5;margin-bottom:16px}.calcresult{display:flex;align-items:center;justify-content:space-between;background:var(--nav);color:white;border-radius:10px;padding:18px;margin-top:15px}.calcresult small{color:#a8bcb9;display:block}.calcresult strong{font:700 25px Manrope;color:var(--lime)}.photo{display:flex;align-items:center;justify-content:center;border:1px dashed #b7c8c2;border-radius:9px;min-height:80px;color:var(--teal);background:#f9fbfa}.mobilemenu{display:none}
+.corp-logo{display:block;width:min(300px,70vw);height:auto;max-height:78px;object-fit:contain;object-position:left center;margin-bottom:14px}.report-logo{margin-bottom:12px}@media print{.side,.top,.heading button,.formactions,.primary{display:none!important}.view{display:none!important}#relatorios{display:block!important}.report-logo{display:block!important;width:240px;margin-bottom:16px}}@media(max-width:900px){.side{width:215px}.body{padding:27px 24px}.top{padding:0 24px}.stats{grid-template-columns:repeat(2,1fr)}.middle{grid-template-columns:1fr}}
+@media(max-width:620px){.side{display:none}.top{height:60px;padding:0 16px}.mobilemenu{display:block;border:0;background:transparent;font-size:20px;color:var(--ink)}.project{font-size:11px;max-width:175px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.body{padding:24px 15px 40px}.heading{align-items:flex-start;gap:12px;flex-direction:column}.heading h1{font-size:24px}.stats{gap:10px}.card{padding:15px}.statnum{font-size:23px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.topright{gap:6px}.ping{display:none}}
+</style></head>
+<body><div class="shell"><aside class="side"><div class="brand"><div class="mark">M</div><div><strong>marco</strong><small>campo & obra</small></div></div><div class="navlabel">Área de trabalho</div><nav class="nav"><button class="active" data-view="home"><span class="icon">▦</span>Painel geral</button><button data-view="drenagem"><span class="icon">◉</span>Drenagem</button><button data-view="estaqueamento"><span class="icon">⌁</span>Estaqueamento</button><button data-view="relatorios"><span class="icon">▤</span>Relatórios</button></nav><div class="sidefoot">Projeto ativo<br><b style="color:#e1ece9">Duplicação BR-___ · Lote 02</b><div class="user"><div class="avatar">JF</div><div>Fiscal de campo<small style="display:block;color:#98abad">Equipe de topografia</small></div></div></div></aside><main class="main"><header class="top"><div class="crumb"><button class="mobilemenu">☰</button> <b>Campo</b>　/　<span id="crumb">Painel geral</span></div><div class="topright"><button class="project">⌖　Duplicação BR-___ · Lote 02　⌄</button><div class="ping">◌</div></div></header><div class="body">
+<section class="view active" id="home"><div class="heading"><div><img class="corp-logo" src="public/assets/marca-strata-basitec.jpeg" alt="Strata Engenharia e Basitec — Consórcio Supervisão Goiás em Movimento"><div class="eyebrow">Diário de campo</div><h1>Bom dia, fiscal.</h1><p>Acompanhe os registros e avance com segurança em campo.</p></div><button class="primary" onclick="showView('drenagem')">＋ Novo registro</button></div><div class="grid stats"><div class="card stat"><div><div class="statlabel">Dispositivos registrados</div><div class="statnum" id="nDevices">12</div><div class="statnote">↑ 3 nesta semana</div></div><div class="staticon">◉</div></div><div class="card stat"><div><div class="statlabel">Concreto estimado</div><div class="statnum" id="totalVol">8,42 m³</div><div class="statnote">Volume informado nos registros</div></div><div class="staticon">▱</div></div><div class="card stat"><div><div class="statlabel">Estaqueamento hoje</div><div class="statnum">0+840</div><div class="statnote">Trecho em execução</div></div><div class="staticon">⌁</div></div><div class="card stat"><div><div class="statlabel">Pendências de vistoria</div><div class="statnum">02</div><div class="statnote" style="color:#b77929">Revisar fotos e cotas</div></div><div class="staticon" style="background:#fff4e5;color:#a36a1d">!</div></div></div><div class="grid middle"><div class="card"><div class="cardhead"><h2>Obra em andamento</h2><button class="textlink">Ver projeto →</button></div><div class="sitebox"><div class="siteico">🏗️</div><div><h3>Duplicação BR-___ · Lote 02</h3><p>Trecho: km 12+000 — km 28+500 · Frente Norte</p></div></div><div class="progresslabel"><span>Avanço físico registrado</span><b>68%</b></div><div class="bar"><i></i></div></div><div class="card"><div class="cardhead"><h2>Atividade recente</h2><button class="textlink" data-go="relatorios">Ver tudo →</button></div><div id="recent"><div class="minirow"><div><strong>Bueiro tubular · BDTC</strong><br><span>km 18+240 · hoje, 09:42</span></div><span class="badge">Conferido</span></div><div class="minirow"><div><strong>Caixa coletora · CC-04</strong><br><span>km 18+110 · hoje, 08:16</span></div><span class="badge">Conferido</span></div><div class="minirow"><div><strong>Sarjeta triangular · ST-02</strong><br><span>km 17+980 · ontem</span></div><span class="badge" style="background:#fff4e4;color:#9a661c">Pendente</span></div></div></div></div><div class="card tablecard"><div class="tabletitle"><h2>Últimos dispositivos de drenagem</h2><button class="textlink" data-go="drenagem">Abrir registros →</button></div><div class="tablewrap"><table><thead><tr><th>Dispositivo</th><th>Estaca</th><th>Dimensões</th><th>Concreto</th><th>Status</th></tr></thead><tbody id="tablebody"><tr><td><b>Bueiro tubular</b><small>BDTC · 2 células</small></td><td>18+240</td><td>Ø 1,20 m · L 12,00 m</td><td>2,71 m³</td><td><span class="tag">Conferido</span></td></tr><tr><td><b>Caixa coletora</b><small>CC-04 · concreto armado</small></td><td>18+110</td><td>1,20 × 1,20 × 1,50 m</td><td>0,86 m³</td><td><span class="tag">Conferido</span></td></tr><tr><td><b>Sarjeta triangular</b><small>ST-02 · moldada in loco</small></td><td>17+980</td><td>Base 0,60 m · L 25,00 m</td><td>1,88 m³</td><td><span class="tag wait">Pendente</span></td></tr></tbody></table></div></div></section>
+<section class="view" id="drenagem"><div class="heading"><div><div class="eyebrow">Diário de campo · Drenagem</div><h1>Novo dispositivo</h1><p>Registre localização, medidas, evidências e estimativa de concreto.</p></div></div><div class="notice">ℹ️ O volume é uma estimativa geométrica. Confira se as dimensões representam o volume de concreto da peça, descontando vazios, armaduras ou formas conforme o critério da sua obra.</div><div class="card"><div class="formgrid"><div class="field"><label>Rodovia</label><select id="roadway"><option value="GO-110">GO-110 · localizações do projeto</option><option value="GO-236">GO-236 · local informado manualmente</option></select><span class="hint" id="roadwayHint">Na GO-110, escolha um item do projeto para preencher estaca e referência.</span></div><div class="field"><label>Dispositivo do projeto / tipo</label><input id="deviceChoice" list="deviceOptions" placeholder="Digite código, tipo ou estaca"><datalist id="deviceOptions"></datalist></div><div class="field full" id="deviceInfo" style="display:none"><div class="notice" id="deviceInfoText" style="margin:0"></div></div><div class="field"><label>Forma para estimativa geométrica</label><select id="tipo"><option value="ret">Caixa / estrutura retangular</option><option value="tub">Bueiro tubular (volume cilíndrico)</option><option value="sar">Sarjeta / seção retangular equivalente</option></select></div><div class="field"><label>Identificação</label><input id="ident" placeholder="Ex.: BDTC-04, CC-12"></div><div class="field"><label>Estaca / localização</label><input id="estaca" placeholder="Ex.: 18+240"></div><div class="field"><label>Data da vistoria</label><input id="data" type="date"></div><div class="field dim" id="fw"><label>Largura (m)</label><input id="w" type="number" min="0" step="0.01" placeholder="0,00"></div><div class="field dim" id="fh"><label>Altura (m)</label><input id="h" type="number" min="0" step="0.01" placeholder="0,00"></div><div class="field dim" id="fl"><label>Comprimento (m)</label><input id="l" type="number" min="0" step="0.01" placeholder="0,00"></div><div class="field dim tube" style="display:none"><label>Diâmetro externo (m)</label><input id="d" type="number" min="0" step="0.01" placeholder="0,00"></div><div class="field dim tube" style="display:none"><label>Comprimento do tubo (m)</label><input id="lt" type="number" min="0" step="0.01" placeholder="0,00"></div><div class="field full"><label>Foto da vistoria</label><label class="photo" for="photos">＋　Fotografar ou escolher uma imagem <input type="file" id="photos" accept="image/*" capture="environment" hidden></label><span class="hint" id="photoHint">A prévia recebe o carimbo no estilo da foto de referência. Baixe a cópia finalizada.</span></div><div class="field"><label>Texto principal da foto</label><input id="photoCaption" value="DRENO DANIFICADO · GO-110" placeholder="Ex.: DRENO DANIFICADO GO-110"></div><div class="field"><label>Coordenadas GPS</label><div style="display:flex;gap:8px"><input id="coords" placeholder="Latitude, longitude" style="flex:1;min-width:0"><button type="button" class="secondary" id="getGPS">Usar GPS</button></div></div><div class="field full" id="photoPreviewWrap" style="display:none"><label>Prévia do carimbo</label><img id="photoPreview" style="width:100%;max-height:480px;object-fit:contain;background:#e8ece9;border-radius:8px"><button type="button" class="primary" id="downloadPhoto" style="margin-top:10px">Baixar foto com marca e dados</button></div><div class="field full"><label>Observações</label><input id="obs" placeholder="Condição, não conformidade, referência de projeto…"></div></div><div class="calcresult"><div><small>Volume geométrico estimado</small><span style="font-size:12px;color:#c1d0cd">Atualizado ao preencher as dimensões</span></div><strong id="volume">0,00 m³</strong></div><div class="formactions"><button class="primary" id="save">Salvar registro</button><button class="secondary" id="clear">Limpar</button></div></div></section>
+<section class="view" id="estaqueamento"><div class="heading"><div><div class="eyebrow">Locação · Eixo da obra</div><h1>Estaqueamento</h1><p>Gere as estacas por intervalo ao longo de um trecho.</p></div></div><div class="notice">ℹ️ Esta ferramenta gera progressivas ao longo de um eixo já definido. Para locação topográfica com coordenadas, azimute, curvas, offsets ou cotas, é necessário configurar os dados de projeto e o método usado pela sua equipe.</div><div class="card"><div class="formgrid"><div class="field"><label>Estaca inicial (progressiva em metros)</label><input id="ini" type="number" value="0" step="0.01" placeholder="Ex.: 12000"></div><div class="field"><label>Estaca final (progressiva em metros)</label><input id="fim" type="number" value="500" step="0.01" placeholder="Ex.: 12500"></div><div class="field"><label>Intervalo entre estacas (m)</label><select id="intervalo"><option>20</option><option>10</option><option>25</option><option>50</option><option> customizado</option></select></div><div class="field" id="customWrap" style="display:none"><label>Intervalo personalizado (m)</label><input id="customInt" type="number" value="20" min="0.01" step="0.01"></div><div class="field"><label>Estaca de referência</label><input id="ref" placeholder="Ex.: 0+000"></div></div><div class="formactions"><button class="primary" id="generate">Gerar estaqueamento</button><button class="secondary" id="copy">Copiar lista</button></div><div id="stakes" class="card" style="margin-top:18px;background:#fafcfb;display:none;padding:14px"></div></div></section>
+<section class="view" id="relatorios"><div class="heading"><div><img class="corp-logo report-logo" src="public/assets/marca-strata-basitec.jpeg" alt="Strata Engenharia e Basitec — Consórcio Supervisão Goiás em Movimento"><div class="eyebrow">Consulta · Exportação</div><h1>Relatórios de campo</h1><p>Consulte os registros salvos neste dispositivo.</p></div><button class="secondary" onclick="window.print()">Imprimir / salvar PDF</button></div><div class="card tablecard"><div class="tabletitle"><h2>Registros de drenagem</h2><span class="hint">Dados armazenados localmente no navegador</span></div><div class="tablewrap"><table><thead><tr><th>Dispositivo</th><th>Estaca</th><th>Data</th><th>Volume estimado</th><th>Observações</th></tr></thead><tbody id="reportbody"><tr><td colspan="5" class="empty">Os novos registros aparecerão aqui.</td></tr></tbody></table></div></div></section>
+</div></main></div>
+<script>
+const sharedDeviceCatalog={
+  "sharedTypes": [
+    {"id":"BSTC","name":"Bueiro tubular de concreto simples","group":"bueiro"},
+    {"id":"BDTC","name":"Bueiro tubular de concreto duplo","group":"bueiro"},
+    {"id":"BSCC","name":"Bueiro celular de concreto simples","group":"bueiro"},
+    {"id":"BDCC","name":"Bueiro celular de concreto duplo","group":"bueiro"},
+    {"id":"PASSAGEM_FAUNA","name":"Passagem de fauna","group":"bueiro"},
+    {"id":"DPS","name":"Dreno profundo em solo","group":"drenagem_profunda"},
+    {"id":"DPR","name":"Dreno profundo em rocha","group":"drenagem_profunda"},
+    {"id":"DSS","name":"Dreno sub-superficial","group":"drenagem_profunda"},
+    {"id":"DSH","name":"Dreno sub-horizontal","group":"drenagem_profunda"},
+    {"id":"COLCHAO_DRENANTE","name":"Colchão drenante","group":"drenagem_profunda"},
+    {"id":"MFC-01","name":"Meio-fio com sarjeta MFC-01","group":"drenagem_superficial"},
+    {"id":"MFC-03","name":"Meio-fio com sarjeta MFC-03","group":"drenagem_superficial"},
+    {"id":"STC-88-20","name":"Sarjeta triangular de concreto STC 88-20","group":"drenagem_superficial"},
+    {"id":"SZC-60-20","name":"Sarjeta trapezoidal de concreto SZC 60-20","group":"drenagem_superficial"},
+    {"id":"TSS-120","name":"Transposição de segmentos de sarjeta TSS 120","group":"drenagem_superficial"},
+    {"id":"TSS-130","name":"Transposição de segmentos de sarjeta TSS 130","group":"drenagem_superficial"},
+    {"id":"TSS-170","name":"Transposição de segmentos de sarjeta TSS 170","group":"drenagem_superficial"},
+    {"id":"TSS-200","name":"Transposição de segmentos de sarjeta TSS 200","group":"drenagem_superficial"},
+    {"id":"EDA-01A","name":"Entrada d'água EDA-01 A","group":"drenagem_superficial"},
+    {"id":"EDA-05A","name":"Entrada d'água EDA-05 A","group":"drenagem_superficial"},
+    {"id":"EDA-05B","name":"Entrada d'água EDA-05 B","group":"drenagem_superficial"},
+    {"id":"EDA-09A","name":"Entrada d'água EDA-09 A","group":"drenagem_superficial"},
+    {"id":"DAD-60-36","name":"Descida d'água em degraus DAD 60-36","group":"drenagem_superficial"},
+    {"id":"DCD-60-30","name":"Descida d'água em degraus DCD 60-30","group":"drenagem_superficial"},
+    {"id":"DEB","name":"Dissipador de energia DEB","group":"drenagem_superficial"},
+    {"id":"DES","name":"Dissipador de energia DES","group":"drenagem_superficial"},
+    {"id":"DED","name":"Dissipador de energia DED","group":"drenagem_superficial"},
+    {"id":"VPAG","name":"Valeta de proteção de aterro em grama","group":"drenagem_superficial"},
+    {"id":"VPAC","name":"Valeta de proteção de aterro em concreto","group":"drenagem_superficial"},
+    {"id":"VPCC","name":"Valeta de proteção de corte em concreto","group":"drenagem_superficial"},
+    {"id":"DR-7A-1","name":"Canaleta retangular de concreto","group":"drenagem_superficial"},
+    {"id":"CANAL_TRAPEZOIDAL","name":"Canal trapezoidal","group":"drenagem_superficial"},
+    {"id":"BAC","name":"Bacia de captação","group":"drenagem_superficial"}
+  ],
+  "roadwayRules": [
+    {"roadway":"GO-110","locationMode":"from_project","sourceProject":"GO-110 drainage PDFs"},
+    {"roadway":"GO-236","locationMode":"manual_at_device_selection","sourceProject":null,"note":"Use the shared device type list. The field user will enter/select the device location manually; do not import GO-110 station locations into GO-236."}
+  ]
+}
+;
+const go110PointDevices={
+  "project": "GO-110",
+  "sourceScope": "Projeto Executivo parcial, estacas 1500 a 2249+14,221",
+  "sourceSchedule": "GO-110-PE-DR-084/085; PDF profundo/OAC, páginas 97-98",
+  "profiles": "PDF profundo/OAC, páginas 36-48",
+  "stationFormat": "estaca+offset_em_metros",
+  "structures": [
+    {
+      "id": "B49",
+      "station": "1555+02,01",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BDCC 2,00 x 2,00 m",
+      "side": "LE",
+      "lengthMeters": 18.8,
+      "action": "Construir projetado",
+      "notes": "Tabela indica 18,80 m; perfil gráfico indica 18,81 m. Conferir valor final no projeto executivo."
+    },
+    {
+      "id": "B50",
+      "station": "1585+02,50",
+      "class": "grota",
+      "existingType": "BSCC 3,90 x 2,70 m",
+      "designType": "BSCC 3,90 x 2,70 m",
+      "side": "LD",
+      "lengthMeters": 4.99,
+      "action": "Prolongamento de bueiro existente",
+      "notes": "4,99 m é o prolongamento indicado no quadro; o perfil também mostra trecho existente de 24,31 m e segmento novo moldado localmente de 5,00 m."
+    },
+    {
+      "id": "B51",
+      "station": "1608+04,88",
+      "class": "grota",
+      "existingType": "Ponte",
+      "designType": "BDCC 2,50 x 2,50 m",
+      "side": "LD",
+      "lengthMeters": 22.94,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B52",
+      "station": "1627+05,38",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 33.94,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B53",
+      "station": "1663+18,00",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 18.53,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B54",
+      "station": "1682+11,57",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 25.33,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B55",
+      "station": "1716+07,95",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 57.72,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B56",
+      "station": "1772+10,75",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 35.58,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B57",
+      "station": "1798+10,05",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 24.91,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B58",
+      "station": "1901+12,45",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 19.2,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B59",
+      "station": "1911+01,62",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 26.17,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B60",
+      "station": "1963+02,92",
+      "class": "grota",
+      "existingType": "-",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 28.97,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B61",
+      "station": "2001+00,00",
+      "class": "grota",
+      "existingType": "-",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 27.61,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B62",
+      "station": "2056+13,60",
+      "class": "grota",
+      "existingType": "Ponte",
+      "designType": "BSCC 2,00 x 2,00 m",
+      "side": "LD",
+      "lengthMeters": 27.47,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B63",
+      "station": "2088+09,27",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 28.74,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B64",
+      "station": "2102+01,76",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 18.32,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B65",
+      "station": "2106+05,96",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BDTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 25.68,
+      "action": "Construir projetado; remover bueiro existente",
+      "notes": "Tabela QDE-084 soma 25,68 m; tabela de escavação QDE-089 informa 25,88 m. Validar discrepância antes de usar comprimento para medição."
+    },
+    {
+      "id": "B66",
+      "station": "2190+11,60",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 22.43,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B67",
+      "station": "2241+07,94",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 36.32,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "GREIDE-1591",
+      "station": "1591+17,51",
+      "class": "greide",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 26.15,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "GREIDE-1818",
+      "station": "1818+05,06",
+      "class": "greide",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 23.78,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "TRANSPOSICAO-1965",
+      "station": "1965+08,79",
+      "stationRange": "1965+07,16 a 1966+01,41",
+      "class": "transposição",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 14.94,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-1610",
+      "station": "1610+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSCC 2,00 x 2,00 m",
+      "side": "LD",
+      "lengthMeters": 21.27,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-1718",
+      "station": "1718+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSTC Ø1,50 m",
+      "side": "LE",
+      "lengthMeters": 24.38,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-2006",
+      "station": "2006+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSTC Ø1,50 m",
+      "side": "LD",
+      "lengthMeters": 17.73,
+      "action": "Construir projetado"
+    }
+  ],
+  "catchmentBasins": [
+    {
+      "station": "1555+02,01",
+      "type": "BAC06",
+      "side": "LE",
+      "heightMeters": 1.15,
+      "adaptedTo": "BDCC 2,00 x 2,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1591+17,51",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 0.19,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1663+18,00",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.33,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1682+11,57",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.54,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1716+07,95",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 0.54,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1772+10,75",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.43,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1798+10,05",
+      "type": "BAC02",
+      "side": "LE",
+      "heightMeters": 1.19,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1818+05,06",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.06,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "2106+05,96",
+      "type": "BAC05",
+      "side": "LD",
+      "heightMeters": 1.64,
+      "adaptedTo": "BDTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "2190+11,60",
+      "type": "BAC02",
+      "side": "LE",
+      "heightMeters": 0.96,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    }
+  ]
+};
+const go110SurfaceDevices={
+  "project": "GO-110",
+  "scope": {
+    "firstStation": "1500+00,00",
+    "lastStation": "2249+14,221"
+  },
+  "sourcePdf": "[40]-97263176_ANEXO_Volume_2__.pdf",
+  "sourcePages": {
+    "mfc": [
+      52,
+      53,
+      54
+    ],
+    "inletsAndDownspouts": [
+      55,
+      56,
+      57
+    ],
+    "cutDownspouts": [
+      58
+    ],
+    "valleys": [
+      59,
+      60
+    ],
+    "trapezoidalChannels": [
+      61
+    ],
+    "gutters": [
+      62,
+      63
+    ],
+    "TSS": [
+      64
+    ]
+  },
+  "surfaceDevices": {
+    "mfcSegments": [
+      {
+        "start": "1540+10,32",
+        "end": "1542+14,98",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 55.83,
+        "lengthM": 44.66,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1541+3,30",
+        "end": "1545+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 120.74,
+        "lengthM": 96.59,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1542+17,40",
+        "end": "1546+15,36",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 97.45,
+        "lengthM": 77.96,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1546+2,04",
+        "end": "1549+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 97.31,
+        "lengthM": 77.85,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1546+17,48",
+        "end": "1550+15,36",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 97.35,
+        "lengthM": 77.88,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1550+2,02",
+        "end": "1553+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 97.34,
+        "lengthM": 77.87,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1550+17,49",
+        "end": "1554+12,39",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 93.63,
+        "lengthM": 74.9,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1554+2,00",
+        "end": "1558+8,78",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 108.48,
+        "lengthM": 86.78,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1554+14,58",
+        "end": "1558+5,11",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 88.15,
+        "lengthM": 70.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1580+14,20",
+        "end": "1584+5,74",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 89.21,
+        "lengthM": 71.37,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1584+8,66",
+        "end": "1586+16,98",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 58.68,
+        "lengthM": 46.94,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1593+11,01",
+        "end": "1594+11,49",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 25.73,
+        "lengthM": 20.58,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1601+4,42",
+        "end": "1602+11,79",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 34.23,
+        "lengthM": 27.38,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1602+13,83",
+        "end": "1603+13,14",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 24.34,
+        "lengthM": 19.47,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1603+16,35",
+        "end": "1608+12,23",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 120.45,
+        "lengthM": 96.36,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1606+9,45",
+        "end": "1607+14,95",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 31.88,
+        "lengthM": 25.5,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1607+17,14",
+        "end": "1610+8,14",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.74,
+        "lengthM": 50.99,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1608+14,40",
+        "end": "1612+3,71",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 86.65,
+        "lengthM": 69.32,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1610+10,47",
+        "end": "1613+1,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.95,
+        "lengthM": 51.16,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1613+3,89",
+        "end": "1616+1,14",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 71.56,
+        "lengthM": 57.25,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1655+13,34",
+        "end": "1659+19,70",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 107.95,
+        "lengthM": 86.36,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1660+2,14",
+        "end": "1664+17,13",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 118.74,
+        "lengthM": 94.99,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1663+1,98",
+        "end": "1664+4,74",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 28.45,
+        "lengthM": 22.76,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1682+0,37",
+        "end": "1686+15,13",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 117.11,
+        "lengthM": 93.69,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1712+4,60",
+        "end": "1717+14,99",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 138.15,
+        "lengthM": 110.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1714+3,15",
+        "end": "1721+17,90",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 192.11,
+        "lengthM": 153.69,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1723+8,14",
+        "end": "1727+8,11",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 98.84,
+        "lengthM": 79.07,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1739+10,76",
+        "end": "1744+12,11",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 126.59,
+        "lengthM": 101.27,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1742+4,69",
+        "end": "1746+13,53",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 111.05,
+        "lengthM": 88.84,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1752+16,70",
+        "end": "1753+16,10",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 24.25,
+        "lengthM": 19.4,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1755+9,35",
+        "end": "1757+3,58",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 42.8,
+        "lengthM": 34.24,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1757+7,58",
+        "end": "1760+12,68",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 80.65,
+        "lengthM": 64.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1760+14,74",
+        "end": "1763+19,18",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 79.68,
+        "lengthM": 63.74,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1764+1,24",
+        "end": "1767+6,63",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 80.85,
+        "lengthM": 64.68,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1767+8,70",
+        "end": "1769+17,29",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 60.09,
+        "lengthM": 48.07,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1769+19,38",
+        "end": "1772+7,86",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.94,
+        "lengthM": 47.95,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1772+9,92",
+        "end": "1774+18,43",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.98,
+        "lengthM": 47.98,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1775+0,49",
+        "end": "1777+8,99",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.98,
+        "lengthM": 47.98,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1777+11,23",
+        "end": "1781+2,66",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 88.35,
+        "lengthM": 70.68,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1797+0,50",
+        "end": "1802+18,01",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 146.46,
+        "lengthM": 117.17,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1797+0,74",
+        "end": "1802+12,69",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 140.28,
+        "lengthM": 112.22,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1811+10,93",
+        "end": "1812+12,39",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 26.83,
+        "lengthM": 21.46,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1816+5,99",
+        "end": "1818+7,23",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 51.55,
+        "lengthM": 41.24,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1819+2,31",
+        "end": "1820+0,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 22.73,
+        "lengthM": 18.18,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+2,52",
+        "end": "1822+10,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+15,29",
+        "end": "1818+9,68",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 57.03,
+        "lengthM": 45.62,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+17,79",
+        "end": "1823+5,34",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.44,
+        "lengthM": 47.55,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1822+12,52",
+        "end": "1825+0,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1823+7,67",
+        "end": "1825+15,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1825+2,52",
+        "end": "1827+10,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1825+17,94",
+        "end": "1828+5,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.6,
+        "lengthM": 47.68,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1827+12,52",
+        "end": "1830+5,46",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 66.16,
+        "lengthM": 52.93,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1828+8,05",
+        "end": "1830+15,68",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.54,
+        "lengthM": 47.63,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1830+17,95",
+        "end": "1833+5,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.6,
+        "lengthM": 47.68,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1832+9,53",
+        "end": "1834+6,47",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 46.18,
+        "lengthM": 36.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1833+7,93",
+        "end": "1835+4,78",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 46.06,
+        "lengthM": 36.85,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1835+11,11",
+        "end": "1837+0,45",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 36.66,
+        "lengthM": 29.33,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1837+8,78",
+        "end": "1839+14,46",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 57.11,
+        "lengthM": 45.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1839+16,50",
+        "end": "1843+13,05",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 95.69,
+        "lengthM": 76.55,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1839+19,96",
+        "end": "1843+12,46",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 90.63,
+        "lengthM": 72.5,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1843+14,50",
+        "end": "1846+15,13",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 75.79,
+        "lengthM": 60.63,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1843+15,38",
+        "end": "1845+10,61",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 44.04,
+        "lengthM": 35.23,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1865+14,56",
+        "end": "1869+3,49",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 86.18,
+        "lengthM": 68.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1868+9,44",
+        "end": "1872+15,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 107.11,
+        "lengthM": 85.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1869+5,53",
+        "end": "1872+10,06",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 80.66,
+        "lengthM": 64.53,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1904+1,01",
+        "end": "1899+19,75",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 101.58,
+        "lengthM": 81.26,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1907+8,89",
+        "end": "1916+17,74",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 236.06,
+        "lengthM": 188.85,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1909+13,04",
+        "end": "1912+15,28",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 77.8,
+        "lengthM": 62.24,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1912+17,32",
+        "end": "1915+18,25",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.16,
+        "lengthM": 60.93,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1916+0,29",
+        "end": "1920+8,65",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 110.45,
+        "lengthM": 88.36,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1916+19,85",
+        "end": "1921+15,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 119.18,
+        "lengthM": 95.34,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1927+11,46",
+        "end": "1930+13,09",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.43,
+        "lengthM": 61.14,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1958+2,48",
+        "end": "1959+0,15",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 21.81,
+        "lengthM": 17.45,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1959+6,20",
+        "end": "1960+16,57",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 37.5,
+        "lengthM": 30.0,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1960+18,63",
+        "end": "1962+10,96",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 39.93,
+        "lengthM": 31.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1962+13,03",
+        "end": "1965+19,31",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 81.86,
+        "lengthM": 65.49,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1966+1,38",
+        "end": "1969+7,61",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 81.79,
+        "lengthM": 65.43,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1969+9,67",
+        "end": "1971+3,74",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 42.08,
+        "lengthM": 33.66,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1996+18,00",
+        "end": "2000+18,70",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 99.61,
+        "lengthM": 79.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2001+0,76",
+        "end": "2005+4,43",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 104.25,
+        "lengthM": 83.4,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2001+15,17",
+        "end": "2004+19,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 80.5,
+        "lengthM": 64.4,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2005+1,52",
+        "end": "2009+14,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 116.2,
+        "lengthM": 92.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2005+6,47",
+        "end": "2009+9,40",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 103.65,
+        "lengthM": 82.92,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2009+16,52",
+        "end": "2014+17,09",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 125.71,
+        "lengthM": 100.57,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2044+4,56",
+        "end": "2047+19,76",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 94.0,
+        "lengthM": 75.2,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2044+13,37",
+        "end": "2047+18,70",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 81.66,
+        "lengthM": 65.33,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2048+0,74",
+        "end": "2052+5,20",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 105.58,
+        "lengthM": 84.46,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2048+1,80",
+        "end": "2052+4,76",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 103.7,
+        "lengthM": 82.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2052+6,80",
+        "end": "2056+13,51",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 108.39,
+        "lengthM": 86.71,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2052+7,24",
+        "end": "2056+13,51",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 107.85,
+        "lengthM": 86.28,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2056+16,75",
+        "end": "2059+7,77",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.76,
+        "lengthM": 51.01,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2056+16,75",
+        "end": "2058+13,00",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 45.31,
+        "lengthM": 36.25,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2063+18,24",
+        "end": "2066+0,99",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 53.44,
+        "lengthM": 42.75,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2082+4,72",
+        "end": "2089+1,33",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 170.76,
+        "lengthM": 136.61,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2084+2,34",
+        "end": "2089+0,91",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 123.21,
+        "lengthM": 98.57,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2089+4,15",
+        "end": "2092+10,97",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 83.51,
+        "lengthM": 66.81,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2089+4,57",
+        "end": "2093+3,56",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 98.74,
+        "lengthM": 78.99,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2101+1,53",
+        "end": "2107+15,01",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 166.94,
+        "lengthM": 133.55,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2104+5,98",
+        "end": "2114+13,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 256.98,
+        "lengthM": 205.58,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2142+4,04",
+        "end": "2149+1,54",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 171.88,
+        "lengthM": 137.5,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2143+0,69",
+        "end": "2148+7,66",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 133.71,
+        "lengthM": 106.97,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2162+1,26",
+        "end": "2171+5,15",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 229.86,
+        "lengthM": 183.89,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2163+1,05",
+        "end": "2172+3,55",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 228.14,
+        "lengthM": 182.51,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2186+3,90",
+        "end": "2189+19,66",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 94.69,
+        "lengthM": 75.75,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2187+2,09",
+        "end": "2190+3,39",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.63,
+        "lengthM": 61.3,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2190+1,87",
+        "end": "2193+7,41",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 81.93,
+        "lengthM": 65.54,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2238+5,53",
+        "end": "2243+6,96",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 126.79,
+        "lengthM": 101.43,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2239+2,13",
+        "end": "2243+17,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 119.19,
+        "lengthM": 95.35,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2244+0,72",
+        "end": "2245+13,42",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 40.88,
+        "lengthM": 32.7,
+        "sourcePdfPage": 54
+      }
+    ],
+    "inletsAndDownspouts": [
+      {
+        "station": "1534+04,40",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1534+09,23",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1542+16,60",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.571,
+        "whitewashM2": 11.57,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1546+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.894,
+        "whitewashM2": 17.67,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1546+16,98",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.689,
+        "whitewashM2": 17.13,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1550+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.567,
+        "whitewashM2": 19.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1550+16,98",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.265,
+        "whitewashM2": 18.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1554+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.427,
+        "whitewashM2": 19.07,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1554+14,01",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.4,
+        "whitewashM2": 18.99,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1558+06,73",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.209,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1558+10,40",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1575+15,89",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1577+07,61",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1584+07,30",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.2,
+        "whitewashM2": 15.85,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1586+18,67",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.185,
+        "whitewashM2": 10.56,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1594+13,08",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 1.674,
+        "whitewashM2": 9.22,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1599+06,94",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1599+16,72",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1602+13,45",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.238,
+        "whitewashM2": 15.95,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1603+14,76",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 2.991,
+        "whitewashM2": 12.72,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1606+07,83",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.228,
+        "whitewashM2": 10.67,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1607+15,52",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.906,
+        "whitewashM2": 22.95,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1608+12,78",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.841,
+        "whitewashM2": 22.78,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1610+08,87",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.461,
+        "whitewashM2": 21.78,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1613+02,30",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.837,
+        "whitewashM2": 20.14,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1616+02,22",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1616+17,55",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1629+17,49",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1655+11,72",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1660+00,52",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.26,
+        "whitewashM2": 13.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1663+00,37",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.221,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1667+18,53",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1669+01,27",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1681+18,70",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.262,
+        "whitewashM2": 10.76,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1699+01,46",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1699+04,23",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1712+02,98",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.104,
+        "whitewashM2": 12.97,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1714+01,53",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.204,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1723+06,51",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 1.488,
+        "whitewashM2": 8.73,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1729+15,96",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1731+01,81",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1739+09,11",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.247,
+        "whitewashM2": 10.72,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1742+03,07",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1752+15,12",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.163,
+        "whitewashM2": 10.5,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1755+07,73",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.163,
+        "whitewashM2": 10.5,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1760+14,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.315,
+        "whitewashM2": 10.9,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1764+00,81",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.779,
+        "whitewashM2": 12.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1767+08,27",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.241,
+        "whitewashM2": 21.2,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1769+18,93",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 9.495,
+        "whitewashM2": 29.74,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1772+09,50",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 10.362,
+        "whitewashM2": 32.01,
+        "energyDissipator": null,
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1775+00,06",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.158,
+        "whitewashM2": 23.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1777+10,64",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.888,
+        "whitewashM2": 25.52,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1781+04,28",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.514,
+        "whitewashM2": 14.05,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1796+18,88",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.206,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1796+19,12",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1804+10,08",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1805+08,57",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1811+09,31",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.171,
+        "whitewashM2": 10.52,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1816+04,37",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1818+08,06",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.224,
+        "whitewashM2": 15.91,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1819+00,69",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.129,
+        "whitewashM2": 10.41,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1820+00,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.534,
+        "whitewashM2": 11.47,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1820+16,17",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.147,
+        "whitewashM2": 18.33,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1822+10,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.701,
+        "whitewashM2": 14.54,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1823+06,05",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.835,
+        "whitewashM2": 17.51,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1825+00,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.455,
+        "whitewashM2": 11.27,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1825+16,32",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.184,
+        "whitewashM2": 10.56,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1827+10,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.816,
+        "whitewashM2": 12.21,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1828+06,43",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.137,
+        "whitewashM2": 10.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1830+16,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.423,
+        "whitewashM2": 11.18,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1832+07,92",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.324,
+        "whitewashM2": 10.92,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1833+06,31",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.743,
+        "whitewashM2": 14.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1835+09,50",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.79,
+        "whitewashM2": 12.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1837+07,16",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.034,
+        "whitewashM2": 10.16,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1839+14,88",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.914,
+        "whitewashM2": 25.59,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1839+18,34",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.22,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1843+12,88",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.136,
+        "whitewashM2": 20.93,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1843+13,76",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.473,
+        "whitewashM2": 19.19,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1849+15,15",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1850+15,92",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1865+12,94",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1868+07,82",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.215,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1869+03,91",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.302,
+        "whitewashM2": 18.74,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1877+05,20",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1877+15,97",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1899+18,13",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.217,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1904+15,23",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1907+07,28",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1909+11,42",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1912+15,70",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1915+18,67",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.997,
+        "whitewashM2": 12.69,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1916+18,22",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 8.791,
+        "whitewashM2": 27.89,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1927+09,81",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.232,
+        "whitewashM2": 10.68,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1958+00,82",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.517,
+        "whitewashM2": 11.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1960+18,16",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.159,
+        "whitewashM2": 18.36,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1962+12,61",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.342,
+        "whitewashM2": 21.47,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1966+00,96",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.022,
+        "whitewashM2": 15.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1969+09,25",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.737,
+        "whitewashM2": 12.01,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1971+05,40",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.204,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1987+19,27",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2001+00,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.21,
+        "whitewashM2": 21.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2005+01,10",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.936,
+        "whitewashM2": 15.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2005+06,05",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.53,
+        "whitewashM2": 16.71,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2009+11,02",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2009+16,10",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.963,
+        "whitewashM2": 12.6,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2014+18,71",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2040+18,64",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2042+17,65",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2048+00,32",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.481,
+        "whitewashM2": 13.96,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2048+01,38",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.366,
+        "whitewashM2": 24.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2052+06,38",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.964,
+        "whitewashM2": 15.23,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2052+06,82",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.88,
+        "whitewashM2": 12.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2056+15,13",
+        "side": "E",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 9.985,
+        "whitewashM2": 31.07,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2056+15,13",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 5.244,
+        "whitewashM2": 18.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2063+16,63",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.221,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2066+02,63",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2072+17,30",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2089+02,53",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 6.737,
+        "whitewashM2": 22.55,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2089+02,95",
+        "side": "E",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 8.341,
+        "whitewashM2": 26.76,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2095+11,77",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2100+19,91",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.182,
+        "whitewashM2": 10.55,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2104+04,36",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.4,
+        "whitewashM2": 11.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2116+15,14",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2118+15,97",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2132+15,13",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2134+08,07",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2142+02,42",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2142+19,07",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.217,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2152+19,19",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2153+18,25",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2160+15,86",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2160+16,70",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2171+06,77",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.195,
+        "whitewashM2": 10.59,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2172+05,17",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2183+12,34",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2184+08,65",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2190+01,28",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.22,
+        "whitewashM2": 13.27,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2190+05,01",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.113,
+        "whitewashM2": 12.99,
+        "energyDissipator": null,
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2193+09,03",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.212,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2224+18,66",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2225+02,10",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2243+08,58",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.218,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2243+19,10",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 6.947,
+        "whitewashM2": 23.1,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      }
+    ],
+    "cutDownspouts": [
+      {
+        "station": "1618+9,90",
+        "side": "D",
+        "type": "DCD 60-30",
+        "lengthM": 8.0,
+        "whitewashM2": 5.12,
+        "sourcePdfPage": 58
+      }
+    ],
+    "valleySegments": [
+      {
+        "start": "1498+5,81",
+        "end": "1524+14,67",
+        "side": "LD",
+        "whitewashM2": 883.21,
+        "lengthM": 528.87,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1524+14,74",
+        "end": "1554+18,35",
+        "side": "LD",
+        "whitewashM2": 1255.58,
+        "lengthM": 605.1,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1542+9,74",
+        "end": "1554+17,50",
+        "side": "LE",
+        "whitewashM2": 514.54,
+        "lengthM": 247.97,
+        "type": "VPAC 160-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1555+2,33",
+        "end": "1560+6,88",
+        "side": "LE",
+        "whitewashM2": 174.95,
+        "lengthM": 104.76,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1560+10,88",
+        "end": "1562+17,63",
+        "side": "LE",
+        "whitewashM2": 78.11,
+        "lengthM": 46.77,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1562+17,63",
+        "end": "1578+8,06",
+        "side": "LE",
+        "whitewashM2": 646.99,
+        "lengthM": 311.8,
+        "type": "VPCC 160-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1578+8,06",
+        "end": "1581+1,59",
+        "side": "LE",
+        "whitewashM2": 116.16,
+        "lengthM": 55.98,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1584+17,20",
+        "end": "1587+11,83",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 58.84,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1587+12,80",
+        "end": "1591+9,88",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 79.56,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1597+18,13",
+        "end": "1598+4,01",
+        "side": "LD",
+        "whitewashM2": 199.31,
+        "lengthM": 119.35,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1616+1,11",
+        "end": "1617+17,25",
+        "side": "LD",
+        "whitewashM2": 60.55,
+        "lengthM": 36.26,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1621+15,28",
+        "end": "1627+3,06",
+        "side": "LD",
+        "whitewashM2": 181.33,
+        "lengthM": 108.58,
+        "type": "VPCC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1627+8,14",
+        "end": "1643+5,05",
+        "side": "LD",
+        "whitewashM2": 507.18,
+        "lengthM": 303.7,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1634+12,58",
+        "end": "1636+10,04",
+        "side": "LE",
+        "whitewashM2": 68.65,
+        "lengthM": 41.11,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1654+10,60",
+        "end": "1663+11,22",
+        "side": "LD",
+        "whitewashM2": 302.62,
+        "lengthM": 181.21,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1663+16,02",
+        "end": "1678+7,42",
+        "side": "LD",
+        "whitewashM2": 491.8,
+        "lengthM": 294.49,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1678+11,34",
+        "end": "1681+17,85",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 69.06,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1682+3,95",
+        "end": "1707+11,68",
+        "side": "LD",
+        "whitewashM2": 859.67,
+        "lengthM": 514.77,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1697+7,63",
+        "end": "1702+9,31",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 102.58,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1708+3,42",
+        "end": "1716+8,96",
+        "side": "LD",
+        "whitewashM2": 282.71,
+        "lengthM": 169.29,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1716+0,96",
+        "end": "1730+5,10",
+        "side": "LE",
+        "whitewashM2": 493.54,
+        "lengthM": 295.53,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1723+19,29",
+        "end": "1731+2,04",
+        "side": "LD",
+        "whitewashM2": 239.23,
+        "lengthM": 143.25,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1742+13,99",
+        "end": "1758+17,39",
+        "side": "LD",
+        "whitewashM2": 543.85,
+        "lengthM": 325.66,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1745+15,28",
+        "end": "1732+6,28",
+        "side": "LE",
+        "whitewashM2": 465.06,
+        "lengthM": 278.48,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1759+7,69",
+        "end": "1766+12,05",
+        "side": "LD",
+        "whitewashM2": 245.89,
+        "lengthM": 147.24,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1766+12,05",
+        "end": "1771+18,82",
+        "side": "LD",
+        "whitewashM2": 184.62,
+        "lengthM": 110.55,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1772+3,90",
+        "end": "1775+4,65",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 63.11,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1775+8,55",
+        "end": "1779+14,40",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 88.08,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1779+14,40",
+        "end": "1787+8,19",
+        "side": "LD",
+        "whitewashM2": 332.34,
+        "lengthM": 160.17,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1780+16,39",
+        "end": "1787+18,46",
+        "side": "LE",
+        "whitewashM2": 239.01,
+        "lengthM": 143.12,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1792+15,13",
+        "end": "1797+2,14",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 87.63,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1799+7,73",
+        "end": "1806+10,19",
+        "side": "LE",
+        "whitewashM2": 242.88,
+        "lengthM": 145.44,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1808+14,48",
+        "end": "1813+2,43",
+        "side": "LD",
+        "whitewashM2": 151.57,
+        "lengthM": 90.76,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1813+4,35",
+        "end": "1815+2,18",
+        "side": "LD",
+        "whitewashM2": 64.45,
+        "lengthM": 38.59,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1818+10,09",
+        "end": "1836+15,16",
+        "side": "LD",
+        "whitewashM2": 609.92,
+        "lengthM": 365.22,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1821+15,84",
+        "end": "1824+15,26",
+        "side": "LE",
+        "whitewashM2": 100.48,
+        "lengthM": 60.17,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1840+8,00",
+        "end": "1850+16,67",
+        "side": "LE",
+        "whitewashM2": 352.74,
+        "lengthM": 211.22,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1865+10,90",
+        "end": "1876+15,19",
+        "side": "LD",
+        "whitewashM2": 376.47,
+        "lengthM": 225.43,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1877+12,88",
+        "end": "1871+16,59",
+        "side": "LE",
+        "whitewashM2": 242.36,
+        "lengthM": 116.8,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1881+4,11",
+        "end": "1886+15,30",
+        "side": "LD",
+        "whitewashM2": 186.34,
+        "lengthM": 111.58,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1898+14,36",
+        "end": "1877+12,88",
+        "side": "LE",
+        "whitewashM2": 704.01,
+        "lengthM": 421.57,
+        "type": "VPCC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1901+5,89",
+        "end": "1905+13,14",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 87.62,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1905+17,13",
+        "end": "1910+6,25",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 89.87,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1950+3,27",
+        "end": "1956+12,85",
+        "side": "LE",
+        "whitewashM2": 213.48,
+        "lengthM": 127.83,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1951+15,09",
+        "end": "1962+15,13",
+        "side": "LD",
+        "whitewashM2": 377.45,
+        "lengthM": 226.02,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1956+16,93",
+        "end": "1960+7,02",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 70.27,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1974+6,81",
+        "end": "1981+13,18",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 149.4,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1981+17,10",
+        "end": "1998+17,30",
+        "side": "LD",
+        "whitewashM2": 582.21,
+        "lengthM": 348.63,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "2003+7,34",
+        "end": null,
+        "side": "2008 + 0,37",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "94,61",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2008+4,37",
+        "end": null,
+        "side": "2010 + 12,29",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "48,86",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2017+0,41",
+        "end": null,
+        "side": "2022 + 14,38",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "114,26",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2030+11,00",
+        "end": null,
+        "side": "2050 + 8,03",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "663,69",
+        "energyDissipator": "397,42",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2062+19,23",
+        "end": null,
+        "side": "2071 + 18,95",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "304,89",
+        "energyDissipator": "182,57",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2083+3,84",
+        "end": null,
+        "side": "2086 + 0,25",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "57,36",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2084+1,07",
+        "end": null,
+        "side": "2088 + 9,27",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "145,34",
+        "energyDissipator": "87,03",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2088+7,01",
+        "end": null,
+        "side": "2096 + 7,42",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "268,99",
+        "energyDissipator": "161,07",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2094+7,75",
+        "end": null,
+        "side": "2100 + 15,07",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "123,66",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2096+11,06",
+        "end": null,
+        "side": "2101 + 14,03",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "103,54",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2100+14,57",
+        "end": null,
+        "side": "2101 + 15,47",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "54,81",
+        "energyDissipator": "32,82",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2101+18,84",
+        "end": null,
+        "side": "2103 + 3,01",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "24,27",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2103+15,32",
+        "end": null,
+        "side": "2106 + 0,89",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "45,80",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2112+12,53",
+        "end": null,
+        "side": "2117 + 15,75",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "179,42",
+        "energyDissipator": "107,44",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2152+10,99",
+        "end": null,
+        "side": "2155 + 3,34",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "100,53",
+        "energyDissipator": "60,20",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2155+13,33",
+        "end": null,
+        "side": "2163 + 7,98",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "259,52",
+        "energyDissipator": "155,40",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2175+15,04",
+        "end": null,
+        "side": "2187 + 5,06",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "387,47",
+        "energyDissipator": "232,02",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2176+15,13",
+        "end": null,
+        "side": "2184 + 5,59",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "251,64",
+        "energyDissipator": "150,68",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2209+3,29",
+        "end": null,
+        "side": "2226 + 10,00",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "587,46",
+        "energyDissipator": "351,77",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2226+10,00",
+        "end": null,
+        "side": "2241 + 7,94",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "475,10",
+        "energyDissipator": "284,49",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2243+15,05",
+        "end": null,
+        "side": "2249 + 9,35",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "115,89",
+        "sourcePdfPage": 60
+      }
+    ],
+    "trapezoidalChannels": [
+      {
+        "start": "1911+8,15",
+        "end": "1918+5,42",
+        "side": "E",
+        "slope": "2,90%",
+        "baseM": 2.5,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 115.96,
+        "excavationM3": 102.62,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1921+2,25",
+        "end": "1931+0,00",
+        "side": "E",
+        "slope": "2,05%",
+        "baseM": 2.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 195.4,
+        "excavationM3": 143.62,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1963+3,00",
+        "end": "1965+7,00",
+        "side": "D",
+        "slope": "0,95%",
+        "baseM": 1.2,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 42.5,
+        "excavationM3": 21.04,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1966+1,50",
+        "end": "1974+6,81",
+        "side": "D",
+        "slope": "0,95%",
+        "baseM": 1.2,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 175.51,
+        "excavationM3": 86.88,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2106+5,96",
+        "end": "2117+10,14",
+        "side": "D",
+        "slope": "5,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 218.11,
+        "excavationM3": 3542.41,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2117+10,14",
+        "end": "2121+15,41",
+        "side": "D",
+        "slope": "2,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 82.19,
+        "excavationM3": 1334.88,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2121+15,41",
+        "end": "2132+18,00",
+        "side": "D",
+        "slope": "7,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 222.66,
+        "excavationM3": 3616.31,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2132+18,00",
+        "end": "2137+0,53",
+        "side": "D",
+        "slope": "5,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 82.54,
+        "excavationM3": 1340.57,
+        "sourcePdfPage": 61
+      }
+    ],
+    "gutterSegments": [
+      {
+        "start": "1522+00,70",
+        "end": "1534+01,90",
+        "side": "LD",
+        "whitewashM2": 250.84,
+        "lengthM": 241.19,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1524+00,35",
+        "end": "1534+05,89",
+        "side": "LE",
+        "whitewashM2": 213.76,
+        "lengthM": 205.54,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1567+14,59",
+        "end": "1575+13,37",
+        "side": "LD",
+        "whitewashM2": 164.82,
+        "lengthM": 158.48,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1569+01,22",
+        "end": "1577+04,32",
+        "side": "LE",
+        "whitewashM2": 170.19,
+        "lengthM": 163.64,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1592+16,70",
+        "end": "1599+14,82",
+        "side": "LD",
+        "whitewashM2": 142.54,
+        "lengthM": 137.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1595+08,49",
+        "end": "1599+03,61",
+        "side": "LE",
+        "whitewashM2": 78.93,
+        "lengthM": 75.89,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1597+18,44",
+        "end": "1599+03,74",
+        "side": "LD",
+        "whitewashM2": 24.02,
+        "lengthM": 31.2,
+        "type": "SZC 60-20",
+        "energyDissipator": "DES 60-180",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1616+05,55",
+        "end": "1633+10,38",
+        "side": "LD",
+        "whitewashM2": 354.86,
+        "lengthM": 341.21,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1617+00,04",
+        "end": "1624+16,36",
+        "side": "LE",
+        "whitewashM2": 162.95,
+        "lengthM": 156.68,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1618+06,56",
+        "end": "1620+03,62",
+        "side": "LD",
+        "whitewashM2": 29.2,
+        "lengthM": 37.92,
+        "type": "SZC 60-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1618+03,40",
+        "end": "1620+19,81",
+        "side": "LE",
+        "whitewashM2": 44.19,
+        "lengthM": 57.39,
+        "type": "SZC 60-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1629+19,92",
+        "end": "1631+18,43",
+        "side": "LE",
+        "whitewashM2": 41.08,
+        "lengthM": 39.5,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1668+01,04",
+        "end": "1680+06,16",
+        "side": "LE",
+        "whitewashM2": 252.92,
+        "lengthM": 243.19,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1669+04,61",
+        "end": "1679+15,11",
+        "side": "LD",
+        "whitewashM2": 220.77,
+        "lengthM": 212.28,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1699+07,58",
+        "end": "1711+15,11",
+        "side": "LD",
+        "whitewashM2": 257.43,
+        "lengthM": 247.53,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1699+03,98",
+        "end": "1710+15,13",
+        "side": "LE",
+        "whitewashM2": 240.4,
+        "lengthM": 231.15,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1729+18,45",
+        "end": "1733+16,64",
+        "side": "LE",
+        "whitewashM2": 82.22,
+        "lengthM": 79.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1731+05,20",
+        "end": "1735+08,82",
+        "side": "LD",
+        "whitewashM2": 85.99,
+        "lengthM": 82.68,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1804+13,49",
+        "end": "1814+16,70",
+        "side": "LD",
+        "whitewashM2": 209.61,
+        "lengthM": 201.55,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1805+11,06",
+        "end": "1808+15,96",
+        "side": "LE",
+        "whitewashM2": 68.38,
+        "lengthM": 65.75,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1849+18,53",
+        "end": "1857+01,42",
+        "side": "LD",
+        "whitewashM2": 147.34,
+        "lengthM": 141.67,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1850+18,41",
+        "end": "1858+16,55",
+        "side": "LE",
+        "whitewashM2": 165.5,
+        "lengthM": 159.13,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1877+08,56",
+        "end": "1893+12,43",
+        "side": "LD",
+        "whitewashM2": 336.83,
+        "lengthM": 323.87,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1877+18,49",
+        "end": "1898+08,66",
+        "side": "LE",
+        "whitewashM2": 426.57,
+        "lengthM": 410.16,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1905+15,13",
+        "end": "1904+15,25",
+        "side": "LD",
+        "whitewashM2": 20.68,
+        "lengthM": 19.88,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1979+14,44",
+        "end": "1987+15,91",
+        "side": "LE",
+        "whitewashM2": 166.25,
+        "lengthM": 159.86,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2020+05,36",
+        "end": "2040+15,28",
+        "side": "LE",
+        "whitewashM2": 426.32,
+        "lengthM": 409.92,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2023+05,51",
+        "end": "2042+15,13",
+        "side": "LD",
+        "whitewashM2": 405.2,
+        "lengthM": 389.62,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2066+05,99",
+        "end": "2080+10,38",
+        "side": "LD",
+        "whitewashM2": 293.94,
+        "lengthM": 282.63,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2072+19,78",
+        "end": "2080+10,45",
+        "side": "LE",
+        "whitewashM2": 157.08,
+        "lengthM": 151.04,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2080+12,25",
+        "end": "2081+19,44",
+        "side": "LD",
+        "whitewashM2": 28.29,
+        "lengthM": 27.2,
+        "type": "STC 88-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2095+15,13",
+        "end": "2099+15,13",
+        "side": "LD",
+        "whitewashM2": 83.2,
+        "lengthM": 80.0,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2116+18,53",
+        "end": "2123+15,13",
+        "side": "LD",
+        "whitewashM2": 141.04,
+        "lengthM": 135.62,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2118+15,13",
+        "end": "2124+08,14",
+        "side": "LE",
+        "whitewashM2": 118.13,
+        "lengthM": 113.59,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2132+18,50",
+        "end": "2138+05,86",
+        "side": "LD",
+        "whitewashM2": 111.65,
+        "lengthM": 107.36,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2134+07,22",
+        "end": "2138+08,27",
+        "side": "LE",
+        "whitewashM2": 84.3,
+        "lengthM": 81.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2154+01,61",
+        "end": "2155+16,59",
+        "side": "LD",
+        "whitewashM2": 36.38,
+        "lengthM": 34.98,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2155+17,06",
+        "end": "2160+13,34",
+        "side": "LD",
+        "whitewashM2": 100.13,
+        "lengthM": 96.28,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2155+17,04",
+        "end": "2160+16,70",
+        "side": "LE",
+        "whitewashM2": 103.65,
+        "lengthM": 99.66,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2174+15,89",
+        "end": "2184+06,13",
+        "side": "LD",
+        "whitewashM2": 197.85,
+        "lengthM": 190.24,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2174+17,32",
+        "end": "2183+08,98",
+        "side": "LE",
+        "whitewashM2": 178.53,
+        "lengthM": 171.66,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      },
+      {
+        "start": "2214+15,68",
+        "end": "2224+19,58",
+        "side": "LD",
+        "whitewashM2": 211.37,
+        "lengthM": 203.24,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      },
+      {
+        "start": "2214+06,10",
+        "end": "2224+15,30",
+        "side": "LE",
+        "whitewashM2": 218.38,
+        "lengthM": 209.98,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      }
+    ],
+    "tssPoints": [
+      {
+        "station": "1528+12,39",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1528+17,09",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 18.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1533+7,50",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 10.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1533+11,94",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 18.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1573+12,09",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1573+17,32",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 19.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1585+7,92",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1702+0,74",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1702+5,68",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 19.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1723+13,01",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1781+18,85",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1784+10,13",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1796+6,69",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1805+9,19",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1835+1,74",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1922+19,68",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1922+19,68",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1959+12,45",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1989+14,34",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2031+6,92",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2031+13,39",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2032+5,73",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2066+16,09",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2153+9,21",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+14,72",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+17,36",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 9.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+17,36",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 2.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2218+7,10",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2244+16,51",
+        "side": "E",
+        "type": "TSS 120",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      }
+    ]
+  }
+};
+const go110LinearDrains={
+  "project": "GO-110",
+  "stationFormat": "estaca+offset_em_metros",
+  "sourceDocument": "GO-110-PE-DR-082, páginas 95-96 do PDF de drenagem profunda/OAC",
+  "linearDrainRuns": [
+    {"type":"DPS08","start":"1595+16,08","end":"1600+01,74","side":"LD","lengthMeters":86.13},
+    {"type":"DPR02","start":"1616+00,37","end":"1623+13,40","side":"LE","lengthMeters":158.85},
+    {"type":"DPR02","start":"1615+17,33","end":"1622+03,23","side":"LD","lengthMeters":129.50},
+    {"type":"DPS08","start":"1848+07,51","end":"1856+07,91","side":"LD","lengthMeters":161.04},
+    {"type":"DPR02","start":"2065+17,63","end":"2079+10,36","side":"LD","lengthMeters":274.46},
+    {"type":"DPR02","start":"2070+12,20","end":"2077+00,17","side":"LE","lengthMeters":130.94},
+    {"type":"DSS04","start":"1603+18,02","end":"1603+18,02","side":"LE","lengthMeters":14.00},
+    {"type":"DSS04","start":"1795+17,72","end":"1795+17,72","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSS04","start":"2057+00,00","end":"2057+00,00","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSS04","start":"2089+07,61","end":"2089+07,61","side":"LE/LD","lengthMeters":14.01},
+    {"type":"DSS04","start":"2244+04,04","end":"2244+04,04","side":"LE/LD","lengthMeters":14.00},
+    {"type":"DSH01","start":"1618+04,97","end":"1621+15,31","side":"LE","levels":1,"spacingMeters":10,"drainCount":7,"lengthMeters":35.00},
+    {"type":"DSH01","start":"1618+08,00","end":"1620+14,00","side":"LD","levels":1,"spacingMeters":10,"drainCount":5,"lengthMeters":25.00}
+  ],
+  "notes": ["DSS04 stations are entry/reference stations with 14 m extension, as tabulated.", "DPS08 is named DPS14 in the quantity summary as a later code revision."]
+}
+;
+const qs=s=>document.querySelector(s), qsa=s=>[...document.querySelectorAll(s)];let records=JSON.parse(localStorage.getItem('marco-registros')||'[]');let lastStakes=[];
+let deviceOptions=[];function option(value,ident,station,type,side,info,manual=false){deviceOptions.push({value,ident,station,type,side,info,manual})}function buildDeviceOptions(){deviceOptions=[];if(qs('#roadway').value==='GO-110'){const p=go110PointDevices;for(const x of p.structures){option(`${x.id} — ${x.designType} — ${x.station}`,x.id,x.station,x.designType,x.side,`${x.class} · ${x.action||'projetado'}${x.lengthMeters?` · ${x.lengthMeters.toFixed(2)} m`:''}${x.notes?` · ${x.notes}`:''}`)}for(const x of p.catchmentBasins||[]){option(`${x.type} — ${x.station} — ${x.adaptedTo}`,x.type,x.station,x.type,x.side,`Bacia de captação · adaptável a ${x.adaptedTo} · altura ${x.heightMeters} m`)}const sd=go110SurfaceDevices.surfaceDevices;for(const x of sd.inletsAndDownspouts){option(`${x.inletType} — ${x.station} — ${x.side}`,x.inletType,x.station,x.inletType,x.side,`Entrada d'água · descida ${x.downspoutLengthM??'—'} m · dissipador ${x.energyDissipator??'—'}`)}for(const x of sd.tssPoints){option(`${x.type} — ${x.station} — ${x.side}`,x.type,x.station,x.type,x.side,`Transposição de sarjeta · ${x.lengthM} m`)}for(const x of sd.cutDownspouts){option(`${x.type} — ${x.station} — ${x.side}`,x.type,x.station,x.type,x.side,`Descida de corte · ${x.lengthM} m`)}for(const key of ['mfcSegments','valleySegments','trapezoidalChannels','gutterSegments'])for(const x of sd[key]){const label=`${x.type||'Canal'} — ${x.start} a ${x.end} — ${x.side}`;option(label,x.type||'Canal',`${x.start} a ${x.end}`,x.type||'Canal',x.side,`Trecho de projeto · ${x.lengthM??'—'} m`)}for(const x of go110LinearDrains.linearDrainRuns){let station=x.start===x.end?x.start:`${x.start} a ${x.end}`;option(`${x.type} — ${station} — ${x.side}`,x.type,station,x.type,x.side,`Drenagem profunda · ${x.lengthMeters} m`)}}else{for(const t of sharedDeviceCatalog.sharedTypes)option(`${t.id} — ${t.name}`,t.id,'',t.id,'',`${t.name}. Informe manualmente a estaca/local da GO-236.`,true)}qs('#deviceOptions').innerHTML=deviceOptions.map(o=>`<option value="${esc(o.value)}"></option>`).join('');qs('#roadwayHint').textContent=qs('#roadway').value==='GO-110'?'GO-110: escolha o dispositivo na lista para preencher a localização do projeto.':'GO-236: os tipos são os mesmos; informe a estaca/local manualmente.';qs('#deviceInfo').style.display='none';qs('#deviceChoice').value=''}qs('#roadway').onchange=()=>{qs('#ident').value='';qs('#estaca').value='';buildDeviceOptions()};qs('#deviceChoice').oninput=()=>{const o=deviceOptions.find(x=>x.value===qs('#deviceChoice').value);if(!o)return;qs('#ident').value=o.ident;if(o.station)qs('#estaca').value=o.station;if(/^(BSTC|BDTC|BTTC)/i.test(o.type))qs('#tipo').value='tub';else if(/^(BSCC|BDCC)/i.test(o.type))qs('#tipo').value='ret';qs('#deviceInfoText').textContent=`${qs('#roadway').value} · ${o.info}${o.side?` · lado ${o.side}`:''}${o.station?` · estaca ${o.station}`:''}${o.manual?' · local manual':''}`;qs('#deviceInfo').style.display='block';if(qs('#photoCaption'))qs('#photoCaption').value=`${o.type} · ${qs('#roadway').value}`};buildDeviceOptions();function showView(id){qsa('.view').forEach(x=>x.classList.toggle('active',x.id===id));qsa('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===id));qs('#crumb').textContent=({home:'Painel geral',drenagem:'Drenagem',estaqueamento:'Estaqueamento',relatorios:'Relatórios'})[id];window.scrollTo(0,0)}
+qsa('.nav button').forEach(b=>b.onclick=()=>showView(b.dataset.view));qsa('[data-go]').forEach(b=>b.onclick=()=>showView(b.dataset.go));
+const dims=['w','h','l','d','lt'];function calc(){let t=qs('#tipo').value,v=0;if(t==='tub'){let d=+qs('#d').value||0,l=+qs('#lt').value||0;v=Math.PI*d*d/4*l}else{v=(+qs('#w').value||0)*(+qs('#h').value||0)*(+qs('#l').value||0)}qs('#volume').textContent=v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+' m³';return v}
+function switchType(){let tube=qs('#tipo').value==='tub';qsa('.tube').forEach(x=>x.style.display=tube?'grid':'none');['fw','fh','fl'].forEach(x=>qs('#'+x).style.display=tube?'none':'grid');calc()}qs('#tipo').onchange=switchType;dims.forEach(x=>qs('#'+x).oninput=calc);
+let sourcePhoto=null,watermarkedBlob=null,previewUrl=null;const watermarkLogo=new Image();watermarkLogo.src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQFBQkGCQkJCQkKCAkICgsLCgoLCwwKCwoLCgwMDAwNDQwMDAwMDw4PDAwNDw8PDw0OERERDhEQEBETERMREQ0BBAQECAYIBwgIBwgGCAYICAgHBwgICQcHBwcHCQoJCAgICAkKCQgIBggICQkJCgoJCQoICQgKCgoKCg4QDg4Od//CABEIAyMGKQMBIgACEQEDEQH/xAEmAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcCAQEBAQEBAAAAAAAAAAAAAAAAAAMBAgIBAAMBAQAAAAAAAAAAAAAAAAMEBQIBEAABAgIHBQgCAgMAAAAAAAACAQMABBAREiAxMnITFCEwUiJCUFFgYWJxQZKCkSOBkBEAAQIBBAkOCA4BBAMAAAAAAgEDBAAFBhIQERMgIjIzcnMUFSEjMDFCUlNicZKxshY0QVBRVGDRQ2GBgoORk6Gis8HC0uEkJWOQ00Dw8RIAAQEDBwkIAwEBAQEAAAAAAQIAAwQREiAwMTJxExQhQFFSYYGRIjNBQnByobEQYMHwYrBQEwABAQUHAwUBAQEBAAAAAAABABEgITGhMEFRYXGx8ECR0WBwgcHx4RCwUP/aAAwDAQACEQMiAAAC5+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3N7YoX1Y83UFc92FscAnxXsdlPar5tePO6wn9bJIltavMwOgAAAAAB7x4SO53BBe7Jl2Kt+7C2OvrAK5js57U1o1slgElo8T4w7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfc03sMdK5lKAdRAAAAAAMeRnsRFWStz0Q5sAAAAMu9LdVtCQ9KUQ3gAAAAB8+iPirL54s1VLRU73wOwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG38sHVb57K54PAAAAAAAANet2Sty0A5tAAD6fZv1u0oB3UAAAAAAAAAae4zqreLFX5aXkZMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyY5zYtvKVyw3wAAA8aed76Gw8zT6ufHVkV7I5nURn3iQYM+xa9bslbnfDm0AAmtKf7phSiAAAfNXOttDYOZ7Arnp7YULu7Huvn3qEAABob7O6mkI+OqDoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZsUfI0zQ7rgADXz3LE6WGeh68nNkAAABmwnkjHDwHQD783nMvnLZAb4AA1/MBxZzaxPQB6ABsTdc9bDamnuVzQ3kADFWrVCcW44TvgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPXnccz3ovkA8AAxVza0ZaQc2AAAAAAAAAE/BWjup6FKAADHkh8l0MRDUDfQAAAPdkrEj1XmxXNAAau18zqqMmOGuG+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJaJndg3xbMAAYM8ZkkMI6wAGX1NbfdOtLKc1pZRWllFaWUVpZRWcNpq3M4ZPtWKEm6Zwd1gAPlXn67O8HFwAAAAB68nlp96W7bJDeAAIDSlIuOqGSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDXrH1V2RXPAAQk3AcWdIT0QALDt6m3bIDeAAAAPFWtNWneDi5Ky8VK1zA6gAAjoSYh46YZOAAAAABLysPMVzA6gAAjIaahY6YZOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsdcsPVXbFc8ABX7BB8WY8T0QALDt6m3bIDeAAAAPFWtNWneDi5LysPMVzA6gAAi4edgo6QZYAAAAAAlZeMk65YdQgARsLLxEdMMnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATsFL7BKi2YAAipXW5krglrAAWHbr3ulCeQJzPIGb2P2OogAPFWtNWneDi5vztastM8O6oAGCtWytTu4BxdAAAAAGV5O7Xz7bIDeQAIWN29SOsGSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN3S9ObU8+r5APAAK7q2OvR1PIyYAABaKvaO6eQUogAeKtaatO8HFz7ZqxNdVpIVzgAEdI/M7qjc046oOgAAAExoWLup9FKAADz60M7g/hHXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnd+vWGmYHcAADQ32d1XzY4iWhpjJwAForNm7p5BSiAB4q1pq07wcXGxrnlr+6O9bJDeAAPEDYfnM1US8bPQxDJAB7x42N2V7q+chSgG+AAK9LV6d0OLoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfgM2xWZ492yweAAAYdbfZ3FpRncdm228+fRvAPAAPFWtNWneDi4BlslW3+q06+fa5wAAD59GpgkmSxXqTZ7p7XpsYbyAAA8+oXJdXXI6gPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN2eqm91Vnnn1WgDwAAAAAAAADxVrTVp3g4uAAScxVN/upOvPqlEHgAAAAAAAB5h8lyRJHSB2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtTda9bBakPJ1o5RsQAAAA1s92UXvO8w2MDxVrTVp3g4uAAAZ5mvtitivyVKO8+feoAAAAAD5qZ1uasXpcW8+ucXAegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGx7cagdvvwbm5DtisOasNitKrN5tGOtns7qxjmTPgMmB7tbcU2OdyV5sVhrxkgZKAAAABk29A4mdivOorN7qxxaVWb5ZsVeZ1Na0cyTLiOZQ30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbTzVbzeNj3ueu6NYbzi9otvUzoHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD34Ynt6pzlaEgO6jT+QPFvJiJ3gegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfbFByvVXZ+V75vlkrM1HZ7rDm0AAffgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPR5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB68jwHr15PPsw3+6lXHFwCx4NjYrl1jFaIXi5ojmwAAAAAAABOfdz3XL0G+eaHiSxOqwJaYAH2cgrT1V1G8pT0W8NFvDRbw0W8NFvDRbw0W8NHDKaud10S0wNmVjp/ujot53X0W8NFvDRbw0W8NH5viMwzLO63r2zBzNWklHcWvgdgAAAAAAAAerHGzNKFb17BX+LIZMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlcU33T+48mPunVxHYAsmxr7Fsh8+t4iom16M7kC9eeLwAAAAAAFp9+PdsYN8YsuLOqwI7AAC01a090/YpRAAAAAAAau1q53XRHXA3Z+An6Zwd1gAAAAAAGrtM6rGKz16WjhGTgAAAAAAPfiY2OR9lspAT+vzLWxLUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbviwdVvv0rnMeTHnVXEdgCybGvsWyA3gDVgbRg4s1pmwz0AegAAAAWjJjyWxw3liy4s6rAjsAALTVrT3T9ilEAx17meyq0yWyq0xZVaFlVoWVWhZdWE+OsI4uAbs/AT9M4O6wBGRvFmyq0d2VWhZVazvJ5ob3Vf6N4Aa+wz2q+ZSLjrA7AAAAAAzWTQkaZwd1gISOs1blpeRzYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2F4z4LBsWxkK5gb4x5MedVcR2ALJsa+xbIDeAAMVfsuPmertnWlpA9AAAAtGTHktjhvLFlxZ1WBHYAAWmrWnun7FKIGKsWesSvhzbAAAAAAA3Z+An6Zwd1gImJlomWmHM4ADd0jm1eoWatlhsYGGtWuuTu6w4ugAAAANjXnti3fpbKAAQ8xjySrvfiGsGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALFCT32mfWbDBznM22K54DHkx51VxHYAsmxr7FsgN4AAA8QFi8czVZuactIHQAAFoyYstscN5YsuLOqwI7AAC01a090/YpRAxViz1iV8ObYAAAAAAG7PwE/TODusBExMtEy0w5nAAA+2erzvVXfFc8BCzUTxPEiemAAAABtWHU3K5gdQAAARMTaa1LRxjmyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABZc+DPbI1myA3gBjyY86q4jsAWTY19i2QG8DHnuREyzsNjA8wNg88zVVu6UtIHQAFny4stscN5YsuLOqwI7AAC01a090/YpRAxViz1iV8ObYAAAAAAG7PwE/TODusBExMtEy0w5nAAATEPM7BJi2YAipWH5nixLTAAAAbepYdh2xbLAREjWuLdp9Rkn1XDeEXKeckqrLihqhvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlz4M9sgN4AAY8mPOquI7AFk2NfYtkBvDHkx51V5WKR1bYh5i2YGxgeYOe88y1Vv6EtMHQFny4c1scN5YsuLOqwI7AAC01a090/YpRAxVi1a3FqvLC5mrywivLCK8sIryw+HsCObIAG7PwE/TODusBExMtEy0w5nAAAWCEs3dT6KUAEBO1ji34E74AAAG5YNXarmB1AMOexUd9+R1stlqs31XkRWgBGQ1qrUtDEObQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlz4M9sgN4AAY8mPOquI7AFk2NfYtkBvDHkx51VxHYScYcWv7CzNsz6NjA+Qk585lqiRjpaYOrLnwZ7ZAbwxZcWdVgR2AAFpq1p7p+xSiAAAAAAx5MedVcR2AAN2fgJ+mcHdYCJiZaJlphzOAAZJjYvu+VzQ3geXujB58EdQMlAAAbmnYtg2hbMAQ0rWeLfkTvs+A8tf3Q37ZIbwjJPzndVZcUdYHoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlz4M9sgN4AAY8mPOquI7AFk2NfYtkBvDx78Z7VhHZASMcc2v7Bzdsz6NiA+Q018ySqJOMjp2XPgz2yw3hiy4s6rAjsAALTVrT3T9ilEAAAAABjyY86q4jsAAbs/AT9M4O6wETEy0TLTk9uCmkfzzKO60Zm3Tzz6OoweD4fYX3FTvBxcAAAA3Z/V2q5YdQjw9i4r34jrBnYGzY6nYO6e4KUQIyGtValoYhzaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsufBntkBvAADFkgeZtIS1ALJsa+xbIDeHj34z2rCOyAAkI85tf2CnK5n0dRAIiXZJgz/PrkN5YsuLOqwI7AAC01a090/YpRAxViz1iV8ObYAAAAAAG7PwE/TODusBExMtEy03345nnt6qz9M/bHdUAfDFDYteWkHNgAAABuadh2HbFssBFykTzPEpFO9HJERyREduZTybePdswHiMk/OSVVkxw1Q30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACy58Ge2QG8APn2HyTHHkdQHQFk2NfYtkBvDx78Z7VhHZAAAb2ic2r1X56ub6HUIAADFlxZ1WBHYAAWmrWnun7FKIGKsWesSvhzbAAAAAAA3Z+An6Zwd1gImJlomWmHM7JjZ5Zc9ZsVc7IO64GGvWfW4s1x68z0QAAANuw6e5XMDqAAAAAAAAACKiLTWZaHgc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLnwZ7ZAbwBhrNlrU74cWwALJsa+xbIDeHj34z2rCOyAAAA29Q5tPuuT9c3IOoQAGLLizqsCOwAAtNWtPdP2KUQMVYs9YlfDm2AAAAAABuz8BP0zg7rARMTLRMtMOZwG1qnNq9Qk3bMDYgNCCtkTO5Eji8AA2dae2HeFssAAAAAAAAABEy2PJKu9eYawaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsufBntkBvAGCtWWtTvhxbAAsmxr7FsgN4efXkqohtAAAAAM+A8s2asT9M7YHdcBiy4s6rAjsAALTVrT3T9ilEDFWLPWJXw5tgAAAAAAbs/AT9M4O6wETEy0TLTDmcABMQ/3Y7W1NuuWG8vn0QGlaa5LRwjmyBnskfI0zQ7rgYY35GTvyaMcyyaMEmjBJowSaMEmjBP7tasndP6O64ENGWetS0fI5sgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT29VrBTP2R3VAwVqy1qd8OLYAFk2NfYtkBvDz68lVENoAAAAAB78MWDcqkxWhJjuoxZcWdVgR2AAFpq1p7p+xSiBirFnrEr4c2wAAAAAAN2fgJ+mcHdYCJiZaJlphzOAABksdY2+q9hfPtc0BrbLPar5mYaWqy4pgk/pbJAePcZkkT4I6wAAAAACfgN3YZ8WywEJN4OZq0JagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADJjZ5Zc9asNc7IO6+CtWWtTvhxbAAsmxHZq5e21G8bfnW+Pa+I6wAAAAAAAEhM1bN1Ws2LXz906yJaoAH20Vee6qbrUUp7bUGasTsHO98HNkAAAAAADdn67L90dtqO6221BqRMjHS0QyYAAACWlqpOd0d9qO6221BtQMpj5mhbNDSWSbTVd1dpqjZrcpCcXA4tgAAAAAAWXPCyFczaarY9pqiL0ZmGlpBkoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZ1jy0+6/PVzMVasta5shxbAAAAAAAAAAAAAAAZMbPA30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIR5zZa1vaOxBk4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QBz90Ac/dAHP3QB//2gAMAwEAAhEDIgAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDnEQkOKbQAAAAAAJheMYgeDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJowQQQQQQQlAAAABNgQQQQQQQRlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOYAQQQQQQQQVgAAAKAQQQQQQQQQQXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANYwQQQSAjBxC1gAAIQQQQSQhSSQQQQOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgQQQxoAAAAFWgABgwQQUcAAACwQQQdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAQQXAAAAAAAAAAJQQQUEwAAAAKAQQRhwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQQUYAAIAggggtwIQQQVQAAAAAAQAQQdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgQQQwAAAQQQQQVA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QAAPQAUfQAOwQZc888887gQcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQaQAAAAVQAAAAAAArQQwAAKAQQwAAAAAAAAwQQQAAANSQU3dAQRAAAAAAAPgQUiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO4gaQAACgUAAAAAAAAAPxgAABwQWgAAAAAAACgQfwAAAAKwQctjjtAAAAAAAEJDjlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJLqQAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2gAMAwEAAhEDIgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABON4QQfs3wAAAAAAGvCk4ITfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEcQAAAAAAAyQAAAALAQAAAAAEBqwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAKwAABGQAAAAAAAAAEgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQgAAAAzhAQy6wAAAQAAACjAzgAAAEhgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOwAAA1HAAAAOogAKQwAAGrgAABAgAAJQAAAAAAAAAAAA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';function dateForStamp(){return new Intl.DateTimeFormat('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date())}async function renderWatermark(){if(!sourcePhoto)return;await watermarkLogo.decode().catch(()=>{});let bitmap;try{bitmap=await createImageBitmap(sourcePhoto)}catch(e){return}const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,0,0);const W=canvas.width,H=canvas.height,scale=W/1600,pad=Math.round(22*scale),font=Math.max(18,Math.round(32*scale)),line=font*1.23;const station=qs('#estaca').value.trim();const coords=qs('#coords').value.trim()||'GPS não informado';const lines=[qs('#photoCaption').value.trim()||'VISTORIA DE CAMPO',station?(station.toUpperCase().startsWith('E=')?station:'E='+station):'E=—',coords,dateForStamp()];const panelH=pad*2+line*lines.length,panelW=Math.min(W*.69,Math.max(W*.50,Math.round(W*.62)));const x=Math.round(W*.015),y=H-panelH-Math.round(H*.018);ctx.fillStyle='rgba(70,70,70,0.57)';ctx.fillRect(x,y,panelW,panelH);ctx.fillStyle='#fff';ctx.font=`${font}px Arial, sans-serif`;ctx.textBaseline='top';lines.forEach((t,i)=>ctx.fillText(t,x+pad,y+pad+i*line,panelW-2*pad));if(watermarkLogo.complete&&watermarkLogo.naturalWidth){const boxW=Math.round(W*.22),boxH=Math.round(H*.19),bx=W-boxW,by=H-boxH;ctx.fillStyle='#000';ctx.fillRect(bx,by,boxW,boxH);const ratio=Math.min((boxW-pad*1.2)/watermarkLogo.naturalWidth,(boxH-pad*1.2)/watermarkLogo.naturalHeight),lw=watermarkLogo.naturalWidth*ratio,lh=watermarkLogo.naturalHeight*ratio;ctx.drawImage(watermarkLogo,bx+(boxW-lw)/2,by+(boxH-lh)/2,lw,lh)}await new Promise(resolve=>canvas.toBlob(b=>{watermarkedBlob=b;resolve()},'image/jpeg',.94));if(previewUrl)URL.revokeObjectURL(previewUrl);previewUrl=URL.createObjectURL(watermarkedBlob);qs('#photoPreview').src=previewUrl;qs('#photoPreviewWrap').style.display='block';qs('#photoHint').textContent='Prévia pronta com texto, localização, data e marca GO INFRA.';bitmap.close()}qs('#photos').onchange=e=>{sourcePhoto=e.target.files[0]||null;if(sourcePhoto){qs('#photoHint').textContent='Preparando a foto…';renderWatermark()}else{qs('#photoPreviewWrap').style.display='none';qs('#photoHint').textContent='A prévia recebe o carimbo no estilo da foto de referência.'}};['photoCaption','coords','estaca'].forEach(id=>qs('#'+id).addEventListener('input',()=>{if(sourcePhoto)renderWatermark()}));qs('#getGPS').onclick=()=>{if(!navigator.geolocation){alert('GPS não disponível neste navegador.');return}navigator.geolocation.getCurrentPosition(p=>{qs('#coords').value=`${p.coords.latitude.toFixed(6)}, ${p.coords.longitude.toFixed(6)}`;if(sourcePhoto)renderWatermark()},()=>alert('Não foi possível obter a localização. Confira a permissão de GPS.'),{enableHighAccuracy:true,timeout:15000})};qs('#downloadPhoto').onclick=()=>{if(!watermarkedBlob)return;const a=document.createElement('a'),st=(qs('#estaca').value||'sem-estaca').replace(/[^a-z0-9-]/gi,'_');a.href=URL.createObjectURL(watermarkedBlob);a.download=`vistoria_${st}.jpg`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+function render(){let body=qs('#reportbody');body.innerHTML=records.length?records.map(r=>`<tr><td><b>${esc(r.ident||r.tipo)}</b><small>${esc(r.tipo)}</small></td><td>${esc(r.estaca||'—')}</td><td>${esc(r.data||'—')}</td><td>${r.v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})} m³</td><td>${esc(r.obs||'—')}</td></tr>`).join(''):'<tr><td colspan="5" class="empty">Os novos registros aparecerão aqui.</td></tr>';qs('#nDevices').textContent=12+records.length;let total=8.42+records.reduce((a,r)=>a+r.v,0);qs('#totalVol').textContent=total.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+' m³';if(records.length){let r=records[records.length-1];qs('#recent').insertAdjacentHTML('afterbegin',`<div class="minirow"><div><strong>${esc(r.ident||r.tipo)}</strong><br><span>${esc(r.estaca||'Sem estaca')} · recém registrado</span></div><span class="badge">Novo</span></div>`);qs('#tablebody').insertAdjacentHTML('afterbegin',`<tr><td><b>${esc(r.ident||r.tipo)}</b><small>${esc(r.tipo)}</small></td><td>${esc(r.estaca||'—')}</td><td>—</td><td>${r.v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})} m³</td><td><span class="tag">Novo</span></td></tr>`)}}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+qs('#save').onclick=()=>{let v=calc(),t=qs('#tipo').value;if(v<=0){alert('Preencha dimensões maiores que zero para calcular o volume.');return}let r={tipo:qs('#tipo').selectedOptions[0].text,ident:qs('#ident').value,estaca:qs('#estaca').value,data:qs('#data').value,obs:qs('#obs').value,v};records.push(r);localStorage.setItem('marco-registros',JSON.stringify(records));render();['ident','estaca','obs','w','h','l','d','lt'].forEach(x=>qs('#'+x).value='');qs('#volume').textContent='0,00 m³';qs('#photoHint').textContent='Registro salvo. Fotos ainda não são armazenadas nesta versão demonstrativa.';alert('Registro salvo neste dispositivo.');};qs('#clear').onclick=()=>{['ident','estaca','obs','w','h','l','d','lt'].forEach(x=>qs('#'+x).value='');calc()};render();
+qs('#intervalo').onchange=()=>qs('#customWrap').style.display=qs('#intervalo').value===' customizado'?'grid':'none';function fmt(n){let km=Math.floor(n/1000),m=Math.round((n-km*1000)*100)/100;return `${km}+${m.toLocaleString('pt-BR',{minimumIntegerDigits:3,minimumFractionDigits: m%1?2:0,maximumFractionDigits:2})}`}
+qs('#generate').onclick=()=>{let a=+qs('#ini').value,b=+qs('#fim').value,step=qs('#intervalo').value===' customizado'?(+qs('#customInt').value):(+qs('#intervalo').value);if(!(step>0)||b<a){alert('Confira as progressivas inicial/final e o intervalo.');return}lastStakes=[];for(let n=a;n<=b+1e-7&&lastStakes.length<5000;n+=step)lastStakes.push(Math.round(n*100)/100);if(lastStakes.at(-1)<b-1e-7)lastStakes.push(b);let box=qs('#stakes');box.style.display='block';box.innerHTML=`<b>${lastStakes.length} estacas geradas</b><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:7px;margin-top:12px">${lastStakes.map(n=>`<span style="background:white;border:1px solid #e5ebe8;border-radius:6px;padding:8px;font-size:12px">${fmt(n)}</span>`).join('')}</div>`};qs('#copy').onclick=async()=>{if(!lastStakes.length){alert('Gere o estaqueamento primeiro.');return}await navigator.clipboard.writeText(lastStakes.map(fmt).join('\n'));alert('Lista de estacas copiada.')};
+</script></body></html>
+
+
+
+
+

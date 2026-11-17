@@ -1,0 +1,3748 @@
+{
+  "project": "GO-110",
+  "scope": {
+    "firstStation": "1500+00,00",
+    "lastStation": "2249+14,221"
+  },
+  "sourcePdf": "[40]-97263176_ANEXO_Volume_2__.pdf",
+  "sourcePages": {
+    "mfc": [
+      52,
+      53,
+      54
+    ],
+    "inletsAndDownspouts": [
+      55,
+      56,
+      57
+    ],
+    "cutDownspouts": [
+      58
+    ],
+    "valleys": [
+      59,
+      60
+    ],
+    "trapezoidalChannels": [
+      61
+    ],
+    "gutters": [
+      62,
+      63
+    ],
+    "TSS": [
+      64
+    ]
+  },
+  "surfaceDevices": {
+    "mfcSegments": [
+      {
+        "start": "1540+10,32",
+        "end": "1542+14,98",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 55.83,
+        "lengthM": 44.66,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1541+3,30",
+        "end": "1545+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 120.74,
+        "lengthM": 96.59,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1542+17,40",
+        "end": "1546+15,36",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 97.45,
+        "lengthM": 77.96,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1546+2,04",
+        "end": "1549+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 97.31,
+        "lengthM": 77.85,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1546+17,48",
+        "end": "1550+15,36",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 97.35,
+        "lengthM": 77.88,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1550+2,02",
+        "end": "1553+19,89",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 97.34,
+        "lengthM": 77.87,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1550+17,49",
+        "end": "1554+12,39",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 93.63,
+        "lengthM": 74.9,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1554+2,00",
+        "end": "1558+8,78",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 108.48,
+        "lengthM": 86.78,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1554+14,58",
+        "end": "1558+5,11",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 88.15,
+        "lengthM": 70.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1580+14,20",
+        "end": "1584+5,74",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 89.21,
+        "lengthM": 71.37,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1584+8,66",
+        "end": "1586+16,98",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 58.68,
+        "lengthM": 46.94,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1593+11,01",
+        "end": "1594+11,49",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 25.73,
+        "lengthM": 20.58,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1601+4,42",
+        "end": "1602+11,79",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 34.23,
+        "lengthM": 27.38,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1602+13,83",
+        "end": "1603+13,14",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 24.34,
+        "lengthM": 19.47,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1603+16,35",
+        "end": "1608+12,23",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 120.45,
+        "lengthM": 96.36,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1606+9,45",
+        "end": "1607+14,95",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 31.88,
+        "lengthM": 25.5,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1607+17,14",
+        "end": "1610+8,14",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.74,
+        "lengthM": 50.99,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1608+14,40",
+        "end": "1612+3,71",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 86.65,
+        "lengthM": 69.32,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1610+10,47",
+        "end": "1613+1,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.95,
+        "lengthM": 51.16,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1613+3,89",
+        "end": "1616+1,14",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 71.56,
+        "lengthM": 57.25,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1655+13,34",
+        "end": "1659+19,70",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 107.95,
+        "lengthM": 86.36,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1660+2,14",
+        "end": "1664+17,13",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 118.74,
+        "lengthM": 94.99,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1663+1,98",
+        "end": "1664+4,74",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 28.45,
+        "lengthM": 22.76,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1682+0,37",
+        "end": "1686+15,13",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 117.11,
+        "lengthM": 93.69,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1712+4,60",
+        "end": "1717+14,99",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 138.15,
+        "lengthM": 110.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1714+3,15",
+        "end": "1721+17,90",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 192.11,
+        "lengthM": 153.69,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1723+8,14",
+        "end": "1727+8,11",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 98.84,
+        "lengthM": 79.07,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1739+10,76",
+        "end": "1744+12,11",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 126.59,
+        "lengthM": 101.27,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1742+4,69",
+        "end": "1746+13,53",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 111.05,
+        "lengthM": 88.84,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1752+16,70",
+        "end": "1753+16,10",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 24.25,
+        "lengthM": 19.4,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1755+9,35",
+        "end": "1757+3,58",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 42.8,
+        "lengthM": 34.24,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1757+7,58",
+        "end": "1760+12,68",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 80.65,
+        "lengthM": 64.52,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1760+14,74",
+        "end": "1763+19,18",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 79.68,
+        "lengthM": 63.74,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1764+1,24",
+        "end": "1767+6,63",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 80.85,
+        "lengthM": 64.68,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1767+8,70",
+        "end": "1769+17,29",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 60.09,
+        "lengthM": 48.07,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1769+19,38",
+        "end": "1772+7,86",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.94,
+        "lengthM": 47.95,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1772+9,92",
+        "end": "1774+18,43",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.98,
+        "lengthM": 47.98,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1775+0,49",
+        "end": "1777+8,99",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 59.98,
+        "lengthM": 47.98,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1777+11,23",
+        "end": "1781+2,66",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 88.35,
+        "lengthM": 70.68,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1797+0,50",
+        "end": "1802+18,01",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 146.46,
+        "lengthM": 117.17,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1797+0,74",
+        "end": "1802+12,69",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 140.28,
+        "lengthM": 112.22,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1811+10,93",
+        "end": "1812+12,39",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 26.83,
+        "lengthM": 21.46,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1816+5,99",
+        "end": "1818+7,23",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 51.55,
+        "lengthM": 41.24,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1819+2,31",
+        "end": "1820+0,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 22.73,
+        "lengthM": 18.18,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+2,52",
+        "end": "1822+10,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+15,29",
+        "end": "1818+9,68",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 57.03,
+        "lengthM": 45.62,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1820+17,79",
+        "end": "1823+5,34",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.44,
+        "lengthM": 47.55,
+        "sourcePdfPage": 52
+      },
+      {
+        "start": "1822+12,52",
+        "end": "1825+0,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1823+7,67",
+        "end": "1825+15,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1825+2,52",
+        "end": "1827+10,48",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 59.95,
+        "lengthM": 47.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1825+17,94",
+        "end": "1828+5,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.6,
+        "lengthM": 47.68,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1827+12,52",
+        "end": "1830+5,46",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 66.16,
+        "lengthM": 52.93,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1828+8,05",
+        "end": "1830+15,68",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.54,
+        "lengthM": 47.63,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1830+17,95",
+        "end": "1833+5,63",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 59.6,
+        "lengthM": 47.68,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1832+9,53",
+        "end": "1834+6,47",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 46.18,
+        "lengthM": 36.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1833+7,93",
+        "end": "1835+4,78",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 46.06,
+        "lengthM": 36.85,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1835+11,11",
+        "end": "1837+0,45",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 36.66,
+        "lengthM": 29.33,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1837+8,78",
+        "end": "1839+14,46",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 57.11,
+        "lengthM": 45.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1839+16,50",
+        "end": "1843+13,05",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 95.69,
+        "lengthM": 76.55,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1839+19,96",
+        "end": "1843+12,46",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 90.63,
+        "lengthM": 72.5,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1843+14,50",
+        "end": "1846+15,13",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 75.79,
+        "lengthM": 60.63,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1843+15,38",
+        "end": "1845+10,61",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 44.04,
+        "lengthM": 35.23,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1865+14,56",
+        "end": "1869+3,49",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 86.18,
+        "lengthM": 68.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1868+9,44",
+        "end": "1872+15,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 107.11,
+        "lengthM": 85.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1869+5,53",
+        "end": "1872+10,06",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 80.66,
+        "lengthM": 64.53,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1904+1,01",
+        "end": "1899+19,75",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 101.58,
+        "lengthM": 81.26,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1907+8,89",
+        "end": "1916+17,74",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 236.06,
+        "lengthM": 188.85,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1909+13,04",
+        "end": "1912+15,28",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 77.8,
+        "lengthM": 62.24,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1912+17,32",
+        "end": "1915+18,25",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.16,
+        "lengthM": 60.93,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1916+0,29",
+        "end": "1920+8,65",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 110.45,
+        "lengthM": 88.36,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1916+19,85",
+        "end": "1921+15,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 119.18,
+        "lengthM": 95.34,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1927+11,46",
+        "end": "1930+13,09",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.43,
+        "lengthM": 61.14,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1958+2,48",
+        "end": "1959+0,15",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 21.81,
+        "lengthM": 17.45,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1959+6,20",
+        "end": "1960+16,57",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 37.5,
+        "lengthM": 30.0,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1960+18,63",
+        "end": "1962+10,96",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 39.93,
+        "lengthM": 31.94,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1962+13,03",
+        "end": "1965+19,31",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 81.86,
+        "lengthM": 65.49,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1966+1,38",
+        "end": "1969+7,61",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 81.79,
+        "lengthM": 65.43,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1969+9,67",
+        "end": "1971+3,74",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 42.08,
+        "lengthM": 33.66,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "1996+18,00",
+        "end": "2000+18,70",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 99.61,
+        "lengthM": 79.69,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2001+0,76",
+        "end": "2005+4,43",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 104.25,
+        "lengthM": 83.4,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2001+15,17",
+        "end": "2004+19,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 80.5,
+        "lengthM": 64.4,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2005+1,52",
+        "end": "2009+14,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 116.2,
+        "lengthM": 92.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2005+6,47",
+        "end": "2009+9,40",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 103.65,
+        "lengthM": 82.92,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2009+16,52",
+        "end": "2014+17,09",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 125.71,
+        "lengthM": 100.57,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2044+4,56",
+        "end": "2047+19,76",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 94.0,
+        "lengthM": 75.2,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2044+13,37",
+        "end": "2047+18,70",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 81.66,
+        "lengthM": 65.33,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2048+0,74",
+        "end": "2052+5,20",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 105.58,
+        "lengthM": 84.46,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2048+1,80",
+        "end": "2052+4,76",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 103.7,
+        "lengthM": 82.96,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2052+6,80",
+        "end": "2056+13,51",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 108.39,
+        "lengthM": 86.71,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2052+7,24",
+        "end": "2056+13,51",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 107.85,
+        "lengthM": 86.28,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2056+16,75",
+        "end": "2059+7,77",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 63.76,
+        "lengthM": 51.01,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2056+16,75",
+        "end": "2058+13,00",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 45.31,
+        "lengthM": 36.25,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2063+18,24",
+        "end": "2066+0,99",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 53.44,
+        "lengthM": 42.75,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2082+4,72",
+        "end": "2089+1,33",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 170.76,
+        "lengthM": 136.61,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2084+2,34",
+        "end": "2089+0,91",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 123.21,
+        "lengthM": 98.57,
+        "sourcePdfPage": 53
+      },
+      {
+        "start": "2089+4,15",
+        "end": "2092+10,97",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 83.51,
+        "lengthM": 66.81,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2089+4,57",
+        "end": "2093+3,56",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 98.74,
+        "lengthM": 78.99,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2101+1,53",
+        "end": "2107+15,01",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 166.94,
+        "lengthM": 133.55,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2104+5,98",
+        "end": "2114+13,13",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 256.98,
+        "lengthM": 205.58,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2142+4,04",
+        "end": "2149+1,54",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 171.88,
+        "lengthM": 137.5,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2143+0,69",
+        "end": "2148+7,66",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 133.71,
+        "lengthM": 106.97,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2162+1,26",
+        "end": "2171+5,15",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 229.86,
+        "lengthM": 183.89,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2163+1,05",
+        "end": "2172+3,55",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 228.14,
+        "lengthM": 182.51,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2186+3,90",
+        "end": "2189+19,66",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 94.69,
+        "lengthM": 75.75,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2187+2,09",
+        "end": "2190+3,39",
+        "side": "LE",
+        "type": "MFC-03",
+        "calcificationM2": 76.63,
+        "lengthM": 61.3,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2190+1,87",
+        "end": "2193+7,41",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 81.93,
+        "lengthM": 65.54,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2238+5,53",
+        "end": "2243+6,96",
+        "side": "LE",
+        "type": "MFC-01",
+        "calcificationM2": 126.79,
+        "lengthM": 101.43,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2239+2,13",
+        "end": "2243+17,48",
+        "side": "LD",
+        "type": "MFC-01",
+        "calcificationM2": 119.19,
+        "lengthM": 95.35,
+        "sourcePdfPage": 54
+      },
+      {
+        "start": "2244+0,72",
+        "end": "2245+13,42",
+        "side": "LD",
+        "type": "MFC-03",
+        "calcificationM2": 40.88,
+        "lengthM": 32.7,
+        "sourcePdfPage": 54
+      }
+    ],
+    "inletsAndDownspouts": [
+      {
+        "station": "1534+04,40",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1534+09,23",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1542+16,60",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.571,
+        "whitewashM2": 11.57,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1546+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.894,
+        "whitewashM2": 17.67,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1546+16,98",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.689,
+        "whitewashM2": 17.13,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1550+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.567,
+        "whitewashM2": 19.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1550+16,98",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.265,
+        "whitewashM2": 18.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1554+01,51",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.427,
+        "whitewashM2": 19.07,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1554+14,01",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.4,
+        "whitewashM2": 18.99,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1558+06,73",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.209,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1558+10,40",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1575+15,89",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1577+07,61",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1584+07,30",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.2,
+        "whitewashM2": 15.85,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1586+18,67",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.185,
+        "whitewashM2": 10.56,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1594+13,08",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 1.674,
+        "whitewashM2": 9.22,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1599+06,94",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1599+16,72",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1602+13,45",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.238,
+        "whitewashM2": 15.95,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1603+14,76",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 2.991,
+        "whitewashM2": 12.72,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1606+07,83",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.228,
+        "whitewashM2": 10.67,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1607+15,52",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.906,
+        "whitewashM2": 22.95,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1608+12,78",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.841,
+        "whitewashM2": 22.78,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1610+08,87",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.461,
+        "whitewashM2": 21.78,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1613+02,30",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.837,
+        "whitewashM2": 20.14,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1616+02,22",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1616+17,55",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1629+17,49",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1655+11,72",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1660+00,52",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.26,
+        "whitewashM2": 13.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1663+00,37",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.221,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1667+18,53",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1669+01,27",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1681+18,70",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.262,
+        "whitewashM2": 10.76,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1699+01,46",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1699+04,23",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1712+02,98",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.104,
+        "whitewashM2": 12.97,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1714+01,53",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.204,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1723+06,51",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 1.488,
+        "whitewashM2": 8.73,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1729+15,96",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1731+01,81",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1739+09,11",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.247,
+        "whitewashM2": 10.72,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1742+03,07",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1752+15,12",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.163,
+        "whitewashM2": 10.5,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1755+07,73",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.163,
+        "whitewashM2": 10.5,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1760+14,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.315,
+        "whitewashM2": 10.9,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1764+00,81",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.779,
+        "whitewashM2": 12.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1767+08,27",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.241,
+        "whitewashM2": 21.2,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1769+18,93",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 9.495,
+        "whitewashM2": 29.74,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1772+09,50",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 10.362,
+        "whitewashM2": 32.01,
+        "energyDissipator": null,
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1775+00,06",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.158,
+        "whitewashM2": 23.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1777+10,64",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.888,
+        "whitewashM2": 25.52,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1781+04,28",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.514,
+        "whitewashM2": 14.05,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 55
+      },
+      {
+        "station": "1796+18,88",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.206,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1796+19,12",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1804+10,08",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1805+08,57",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1811+09,31",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.171,
+        "whitewashM2": 10.52,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1816+04,37",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1818+08,06",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.224,
+        "whitewashM2": 15.91,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1819+00,69",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.129,
+        "whitewashM2": 10.41,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1820+00,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.534,
+        "whitewashM2": 11.47,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1820+16,17",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.147,
+        "whitewashM2": 18.33,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1822+10,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.701,
+        "whitewashM2": 14.54,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1823+06,05",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.835,
+        "whitewashM2": 17.51,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1825+00,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.455,
+        "whitewashM2": 11.27,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1825+16,32",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.184,
+        "whitewashM2": 10.56,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1827+10,91",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.816,
+        "whitewashM2": 12.21,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1828+06,43",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.137,
+        "whitewashM2": 10.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1830+16,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.423,
+        "whitewashM2": 11.18,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1832+07,92",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.324,
+        "whitewashM2": 10.92,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1833+06,31",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.743,
+        "whitewashM2": 14.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1835+09,50",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.79,
+        "whitewashM2": 12.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1837+07,16",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.034,
+        "whitewashM2": 10.16,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1839+14,88",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.914,
+        "whitewashM2": 25.59,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1839+18,34",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.22,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1843+12,88",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.136,
+        "whitewashM2": 20.93,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1843+13,76",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.473,
+        "whitewashM2": 19.19,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1849+15,15",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1850+15,92",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1865+12,94",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1868+07,82",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.215,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1869+03,91",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.302,
+        "whitewashM2": 18.74,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1877+05,20",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1877+15,97",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1899+18,13",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.217,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1904+15,23",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1907+07,28",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.21,
+        "whitewashM2": 10.62,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1909+11,42",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1912+15,70",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1915+18,67",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.997,
+        "whitewashM2": 12.69,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1916+18,22",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 8.791,
+        "whitewashM2": 27.89,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1927+09,81",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.232,
+        "whitewashM2": 10.68,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1958+00,82",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.517,
+        "whitewashM2": 11.43,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1960+18,16",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 5.159,
+        "whitewashM2": 18.36,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1962+12,61",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.342,
+        "whitewashM2": 21.47,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1966+00,96",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.022,
+        "whitewashM2": 15.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1969+09,25",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.737,
+        "whitewashM2": 12.01,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1971+05,40",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.204,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "1987+19,27",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2001+00,33",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 6.21,
+        "whitewashM2": 21.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2005+01,10",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.936,
+        "whitewashM2": 15.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2005+06,05",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 4.53,
+        "whitewashM2": 16.71,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2009+11,02",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.205,
+        "whitewashM2": 10.61,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2009+16,10",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.963,
+        "whitewashM2": 12.6,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2014+18,71",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2040+18,64",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 56
+      },
+      {
+        "station": "2042+17,65",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2048+00,32",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.481,
+        "whitewashM2": 13.96,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2048+01,38",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 7.366,
+        "whitewashM2": 24.15,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2052+06,38",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.964,
+        "whitewashM2": 15.23,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2052+06,82",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.88,
+        "whitewashM2": 12.38,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2056+15,13",
+        "side": "E",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 9.985,
+        "whitewashM2": 31.07,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2056+15,13",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 5.244,
+        "whitewashM2": 18.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2063+16,63",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.221,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2066+02,63",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2072+17,30",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2089+02,53",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 6.737,
+        "whitewashM2": 22.55,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2089+02,95",
+        "side": "E",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 8.341,
+        "whitewashM2": 26.76,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2095+11,77",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2100+19,91",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.182,
+        "whitewashM2": 10.55,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2104+04,36",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.4,
+        "whitewashM2": 11.12,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2116+15,14",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2118+15,97",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2132+15,13",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2134+08,07",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2142+02,42",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.214,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2142+19,07",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.217,
+        "whitewashM2": 10.64,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2152+19,19",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2153+18,25",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2160+15,86",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2160+16,70",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2171+06,77",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.195,
+        "whitewashM2": 10.59,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2172+05,17",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.213,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2183+12,34",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2184+08,65",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2190+01,28",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.22,
+        "whitewashM2": 13.27,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2190+05,01",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 3.113,
+        "whitewashM2": 12.99,
+        "energyDissipator": null,
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2193+09,03",
+        "side": "D",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.212,
+        "whitewashM2": 10.63,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2224+18,66",
+        "side": "E",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2225+02,10",
+        "side": "D",
+        "inletType": "EDA 09 A",
+        "downspoutLengthM": null,
+        "whitewashM2": 4.37,
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2243+08,58",
+        "side": "E",
+        "inletType": "EDA-05 A",
+        "downspoutLengthM": 2.218,
+        "whitewashM2": 10.65,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      },
+      {
+        "station": "2243+19,10",
+        "side": "D",
+        "inletType": "EDA-05 B",
+        "downspoutLengthM": 6.947,
+        "whitewashM2": 23.1,
+        "energyDissipator": "DED 03A",
+        "sourcePdfPage": 57
+      }
+    ],
+    "cutDownspouts": [
+      {
+        "station": "1618+9,90",
+        "side": "D",
+        "type": "DCD 60-30",
+        "lengthM": 8.0,
+        "whitewashM2": 5.12,
+        "sourcePdfPage": 58
+      }
+    ],
+    "valleySegments": [
+      {
+        "start": "1498+5,81",
+        "end": "1524+14,67",
+        "side": "LD",
+        "whitewashM2": 883.21,
+        "lengthM": 528.87,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1524+14,74",
+        "end": "1554+18,35",
+        "side": "LD",
+        "whitewashM2": 1255.58,
+        "lengthM": 605.1,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1542+9,74",
+        "end": "1554+17,50",
+        "side": "LE",
+        "whitewashM2": 514.54,
+        "lengthM": 247.97,
+        "type": "VPAC 160-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1555+2,33",
+        "end": "1560+6,88",
+        "side": "LE",
+        "whitewashM2": 174.95,
+        "lengthM": 104.76,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1560+10,88",
+        "end": "1562+17,63",
+        "side": "LE",
+        "whitewashM2": 78.11,
+        "lengthM": 46.77,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1562+17,63",
+        "end": "1578+8,06",
+        "side": "LE",
+        "whitewashM2": 646.99,
+        "lengthM": 311.8,
+        "type": "VPCC 160-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1578+8,06",
+        "end": "1581+1,59",
+        "side": "LE",
+        "whitewashM2": 116.16,
+        "lengthM": 55.98,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1584+17,20",
+        "end": "1587+11,83",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 58.84,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1587+12,80",
+        "end": "1591+9,88",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 79.56,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1597+18,13",
+        "end": "1598+4,01",
+        "side": "LD",
+        "whitewashM2": 199.31,
+        "lengthM": 119.35,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1616+1,11",
+        "end": "1617+17,25",
+        "side": "LD",
+        "whitewashM2": 60.55,
+        "lengthM": 36.26,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1621+15,28",
+        "end": "1627+3,06",
+        "side": "LD",
+        "whitewashM2": 181.33,
+        "lengthM": 108.58,
+        "type": "VPCC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1627+8,14",
+        "end": "1643+5,05",
+        "side": "LD",
+        "whitewashM2": 507.18,
+        "lengthM": 303.7,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1634+12,58",
+        "end": "1636+10,04",
+        "side": "LE",
+        "whitewashM2": 68.65,
+        "lengthM": 41.11,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1654+10,60",
+        "end": "1663+11,22",
+        "side": "LD",
+        "whitewashM2": 302.62,
+        "lengthM": 181.21,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1663+16,02",
+        "end": "1678+7,42",
+        "side": "LD",
+        "whitewashM2": 491.8,
+        "lengthM": 294.49,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1678+11,34",
+        "end": "1681+17,85",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 69.06,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1682+3,95",
+        "end": "1707+11,68",
+        "side": "LD",
+        "whitewashM2": 859.67,
+        "lengthM": 514.77,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1697+7,63",
+        "end": "1702+9,31",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 102.58,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1708+3,42",
+        "end": "1716+8,96",
+        "side": "LD",
+        "whitewashM2": 282.71,
+        "lengthM": 169.29,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1716+0,96",
+        "end": "1730+5,10",
+        "side": "LE",
+        "whitewashM2": 493.54,
+        "lengthM": 295.53,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1723+19,29",
+        "end": "1731+2,04",
+        "side": "LD",
+        "whitewashM2": 239.23,
+        "lengthM": 143.25,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1742+13,99",
+        "end": "1758+17,39",
+        "side": "LD",
+        "whitewashM2": 543.85,
+        "lengthM": 325.66,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1745+15,28",
+        "end": "1732+6,28",
+        "side": "LE",
+        "whitewashM2": 465.06,
+        "lengthM": 278.48,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1759+7,69",
+        "end": "1766+12,05",
+        "side": "LD",
+        "whitewashM2": 245.89,
+        "lengthM": 147.24,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1766+12,05",
+        "end": "1771+18,82",
+        "side": "LD",
+        "whitewashM2": 184.62,
+        "lengthM": 110.55,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1772+3,90",
+        "end": "1775+4,65",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 63.11,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1775+8,55",
+        "end": "1779+14,40",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 88.08,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1779+14,40",
+        "end": "1787+8,19",
+        "side": "LD",
+        "whitewashM2": 332.34,
+        "lengthM": 160.17,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 160-480",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1780+16,39",
+        "end": "1787+18,46",
+        "side": "LE",
+        "whitewashM2": 239.01,
+        "lengthM": 143.12,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1792+15,13",
+        "end": "1797+2,14",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 87.63,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1799+7,73",
+        "end": "1806+10,19",
+        "side": "LE",
+        "whitewashM2": 242.88,
+        "lengthM": 145.44,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1808+14,48",
+        "end": "1813+2,43",
+        "side": "LD",
+        "whitewashM2": 151.57,
+        "lengthM": 90.76,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1813+4,35",
+        "end": "1815+2,18",
+        "side": "LD",
+        "whitewashM2": 64.45,
+        "lengthM": 38.59,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1818+10,09",
+        "end": "1836+15,16",
+        "side": "LD",
+        "whitewashM2": 609.92,
+        "lengthM": 365.22,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1821+15,84",
+        "end": "1824+15,26",
+        "side": "LE",
+        "whitewashM2": 100.48,
+        "lengthM": 60.17,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1840+8,00",
+        "end": "1850+16,67",
+        "side": "LE",
+        "whitewashM2": 352.74,
+        "lengthM": 211.22,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1865+10,90",
+        "end": "1876+15,19",
+        "side": "LD",
+        "whitewashM2": 376.47,
+        "lengthM": 225.43,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1877+12,88",
+        "end": "1871+16,59",
+        "side": "LE",
+        "whitewashM2": 242.36,
+        "lengthM": 116.8,
+        "type": "VPAC 160-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1881+4,11",
+        "end": "1886+15,30",
+        "side": "LD",
+        "whitewashM2": 186.34,
+        "lengthM": 111.58,
+        "type": "VPCC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1898+14,36",
+        "end": "1877+12,88",
+        "side": "LE",
+        "whitewashM2": 704.01,
+        "lengthM": 421.57,
+        "type": "VPCC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1901+5,89",
+        "end": "1905+13,14",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 87.62,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1905+17,13",
+        "end": "1910+6,25",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 89.87,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1950+3,27",
+        "end": "1956+12,85",
+        "side": "LE",
+        "whitewashM2": 213.48,
+        "lengthM": 127.83,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1951+15,09",
+        "end": "1962+15,13",
+        "side": "LD",
+        "whitewashM2": 377.45,
+        "lengthM": 226.02,
+        "type": "VPAC 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1956+16,93",
+        "end": "1960+7,02",
+        "side": "LE",
+        "whitewashM2": 0.0,
+        "lengthM": 70.27,
+        "type": "VPAG 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1974+6,81",
+        "end": "1981+13,18",
+        "side": "LD",
+        "whitewashM2": 0.0,
+        "lengthM": 149.4,
+        "type": "VPAG 120-30",
+        "energyDissipator": null,
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "1981+17,10",
+        "end": "1998+17,30",
+        "side": "LD",
+        "whitewashM2": 582.21,
+        "lengthM": 348.63,
+        "type": "VPAC 120-30",
+        "energyDissipator": "DES 120-360",
+        "sourcePdfPage": 59
+      },
+      {
+        "start": "2003+7,34",
+        "end": null,
+        "side": "2008 + 0,37",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "94,61",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2008+4,37",
+        "end": null,
+        "side": "2010 + 12,29",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "48,86",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2017+0,41",
+        "end": null,
+        "side": "2022 + 14,38",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "114,26",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2030+11,00",
+        "end": null,
+        "side": "2050 + 8,03",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "663,69",
+        "energyDissipator": "397,42",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2062+19,23",
+        "end": null,
+        "side": "2071 + 18,95",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "304,89",
+        "energyDissipator": "182,57",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2083+3,84",
+        "end": null,
+        "side": "2086 + 0,25",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "57,36",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2084+1,07",
+        "end": null,
+        "side": "2088 + 9,27",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "145,34",
+        "energyDissipator": "87,03",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2088+7,01",
+        "end": null,
+        "side": "2096 + 7,42",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "268,99",
+        "energyDissipator": "161,07",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2094+7,75",
+        "end": null,
+        "side": "2100 + 15,07",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "123,66",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2096+11,06",
+        "end": null,
+        "side": "2101 + 14,03",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "103,54",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2100+14,57",
+        "end": null,
+        "side": "2101 + 15,47",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "54,81",
+        "energyDissipator": "32,82",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2101+18,84",
+        "end": null,
+        "side": "2103 + 3,01",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "24,27",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2103+15,32",
+        "end": null,
+        "side": "2106 + 0,89",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "0,00",
+        "energyDissipator": "45,80",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2112+12,53",
+        "end": null,
+        "side": "2117 + 15,75",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "179,42",
+        "energyDissipator": "107,44",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2152+10,99",
+        "end": null,
+        "side": "2155 + 3,34",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "100,53",
+        "energyDissipator": "60,20",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2155+13,33",
+        "end": null,
+        "side": "2163 + 7,98",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "259,52",
+        "energyDissipator": "155,40",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2175+15,04",
+        "end": null,
+        "side": "2187 + 5,06",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "387,47",
+        "energyDissipator": "232,02",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2176+15,13",
+        "end": null,
+        "side": "2184 + 5,59",
+        "whitewashM2": null,
+        "lengthM": "LD",
+        "type": "251,64",
+        "energyDissipator": "150,68",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2209+3,29",
+        "end": null,
+        "side": "2226 + 10,00",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "587,46",
+        "energyDissipator": "351,77",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2226+10,00",
+        "end": null,
+        "side": "2241 + 7,94",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "475,10",
+        "energyDissipator": "284,49",
+        "sourcePdfPage": 60
+      },
+      {
+        "start": "2243+15,05",
+        "end": null,
+        "side": "2249 + 9,35",
+        "whitewashM2": null,
+        "lengthM": "LE",
+        "type": "0,00",
+        "energyDissipator": "115,89",
+        "sourcePdfPage": 60
+      }
+    ],
+    "trapezoidalChannels": [
+      {
+        "start": "1911+8,15",
+        "end": "1918+5,42",
+        "side": "E",
+        "slope": "2,90%",
+        "baseM": 2.5,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 115.96,
+        "excavationM3": 102.62,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1921+2,25",
+        "end": "1931+0,00",
+        "side": "E",
+        "slope": "2,05%",
+        "baseM": 2.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 195.4,
+        "excavationM3": 143.62,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1963+3,00",
+        "end": "1965+7,00",
+        "side": "D",
+        "slope": "0,95%",
+        "baseM": 1.2,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 42.5,
+        "excavationM3": 21.04,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "1966+1,50",
+        "end": "1974+6,81",
+        "side": "D",
+        "slope": "0,95%",
+        "baseM": 1.2,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 175.51,
+        "excavationM3": 86.88,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2106+5,96",
+        "end": "2117+10,14",
+        "side": "D",
+        "slope": "5,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 218.11,
+        "excavationM3": 3542.41,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2117+10,14",
+        "end": "2121+15,41",
+        "side": "D",
+        "slope": "2,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 82.19,
+        "excavationM3": 1334.88,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2121+15,41",
+        "end": "2132+18,00",
+        "side": "D",
+        "slope": "7,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 222.66,
+        "excavationM3": 3616.31,
+        "sourcePdfPage": 61
+      },
+      {
+        "start": "2132+18,00",
+        "end": "2137+0,53",
+        "side": "D",
+        "slope": "5,00%",
+        "baseM": 11.0,
+        "heightM": 0.3,
+        "lining": "SEMEADURA VEGETAL",
+        "lengthM": 82.54,
+        "excavationM3": 1340.57,
+        "sourcePdfPage": 61
+      }
+    ],
+    "gutterSegments": [
+      {
+        "start": "1522+00,70",
+        "end": "1534+01,90",
+        "side": "LD",
+        "whitewashM2": 250.84,
+        "lengthM": 241.19,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1524+00,35",
+        "end": "1534+05,89",
+        "side": "LE",
+        "whitewashM2": 213.76,
+        "lengthM": 205.54,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1567+14,59",
+        "end": "1575+13,37",
+        "side": "LD",
+        "whitewashM2": 164.82,
+        "lengthM": 158.48,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1569+01,22",
+        "end": "1577+04,32",
+        "side": "LE",
+        "whitewashM2": 170.19,
+        "lengthM": 163.64,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1592+16,70",
+        "end": "1599+14,82",
+        "side": "LD",
+        "whitewashM2": 142.54,
+        "lengthM": 137.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1595+08,49",
+        "end": "1599+03,61",
+        "side": "LE",
+        "whitewashM2": 78.93,
+        "lengthM": 75.89,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1597+18,44",
+        "end": "1599+03,74",
+        "side": "LD",
+        "whitewashM2": 24.02,
+        "lengthM": 31.2,
+        "type": "SZC 60-20",
+        "energyDissipator": "DES 60-180",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1616+05,55",
+        "end": "1633+10,38",
+        "side": "LD",
+        "whitewashM2": 354.86,
+        "lengthM": 341.21,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1617+00,04",
+        "end": "1624+16,36",
+        "side": "LE",
+        "whitewashM2": 162.95,
+        "lengthM": 156.68,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1618+06,56",
+        "end": "1620+03,62",
+        "side": "LD",
+        "whitewashM2": 29.2,
+        "lengthM": 37.92,
+        "type": "SZC 60-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1618+03,40",
+        "end": "1620+19,81",
+        "side": "LE",
+        "whitewashM2": 44.19,
+        "lengthM": 57.39,
+        "type": "SZC 60-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1629+19,92",
+        "end": "1631+18,43",
+        "side": "LE",
+        "whitewashM2": 41.08,
+        "lengthM": 39.5,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1668+01,04",
+        "end": "1680+06,16",
+        "side": "LE",
+        "whitewashM2": 252.92,
+        "lengthM": 243.19,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1669+04,61",
+        "end": "1679+15,11",
+        "side": "LD",
+        "whitewashM2": 220.77,
+        "lengthM": 212.28,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1699+07,58",
+        "end": "1711+15,11",
+        "side": "LD",
+        "whitewashM2": 257.43,
+        "lengthM": 247.53,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1699+03,98",
+        "end": "1710+15,13",
+        "side": "LE",
+        "whitewashM2": 240.4,
+        "lengthM": 231.15,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1729+18,45",
+        "end": "1733+16,64",
+        "side": "LE",
+        "whitewashM2": 82.22,
+        "lengthM": 79.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1731+05,20",
+        "end": "1735+08,82",
+        "side": "LD",
+        "whitewashM2": 85.99,
+        "lengthM": 82.68,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1804+13,49",
+        "end": "1814+16,70",
+        "side": "LD",
+        "whitewashM2": 209.61,
+        "lengthM": 201.55,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1805+11,06",
+        "end": "1808+15,96",
+        "side": "LE",
+        "whitewashM2": 68.38,
+        "lengthM": 65.75,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1849+18,53",
+        "end": "1857+01,42",
+        "side": "LD",
+        "whitewashM2": 147.34,
+        "lengthM": 141.67,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1850+18,41",
+        "end": "1858+16,55",
+        "side": "LE",
+        "whitewashM2": 165.5,
+        "lengthM": 159.13,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1877+08,56",
+        "end": "1893+12,43",
+        "side": "LD",
+        "whitewashM2": 336.83,
+        "lengthM": 323.87,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1877+18,49",
+        "end": "1898+08,66",
+        "side": "LE",
+        "whitewashM2": 426.57,
+        "lengthM": 410.16,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1905+15,13",
+        "end": "1904+15,25",
+        "side": "LD",
+        "whitewashM2": 20.68,
+        "lengthM": 19.88,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "1979+14,44",
+        "end": "1987+15,91",
+        "side": "LE",
+        "whitewashM2": 166.25,
+        "lengthM": 159.86,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2020+05,36",
+        "end": "2040+15,28",
+        "side": "LE",
+        "whitewashM2": 426.32,
+        "lengthM": 409.92,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2023+05,51",
+        "end": "2042+15,13",
+        "side": "LD",
+        "whitewashM2": 405.2,
+        "lengthM": 389.62,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2066+05,99",
+        "end": "2080+10,38",
+        "side": "LD",
+        "whitewashM2": 293.94,
+        "lengthM": 282.63,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2072+19,78",
+        "end": "2080+10,45",
+        "side": "LE",
+        "whitewashM2": 157.08,
+        "lengthM": 151.04,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2080+12,25",
+        "end": "2081+19,44",
+        "side": "LD",
+        "whitewashM2": 28.29,
+        "lengthM": 27.2,
+        "type": "STC 88-20",
+        "energyDissipator": null,
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2095+15,13",
+        "end": "2099+15,13",
+        "side": "LD",
+        "whitewashM2": 83.2,
+        "lengthM": 80.0,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2116+18,53",
+        "end": "2123+15,13",
+        "side": "LD",
+        "whitewashM2": 141.04,
+        "lengthM": 135.62,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2118+15,13",
+        "end": "2124+08,14",
+        "side": "LE",
+        "whitewashM2": 118.13,
+        "lengthM": 113.59,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2132+18,50",
+        "end": "2138+05,86",
+        "side": "LD",
+        "whitewashM2": 111.65,
+        "lengthM": 107.36,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2134+07,22",
+        "end": "2138+08,27",
+        "side": "LE",
+        "whitewashM2": 84.3,
+        "lengthM": 81.06,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2154+01,61",
+        "end": "2155+16,59",
+        "side": "LD",
+        "whitewashM2": 36.38,
+        "lengthM": 34.98,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2155+17,06",
+        "end": "2160+13,34",
+        "side": "LD",
+        "whitewashM2": 100.13,
+        "lengthM": 96.28,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2155+17,04",
+        "end": "2160+16,70",
+        "side": "LE",
+        "whitewashM2": 103.65,
+        "lengthM": 99.66,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2174+15,89",
+        "end": "2184+06,13",
+        "side": "LD",
+        "whitewashM2": 197.85,
+        "lengthM": 190.24,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 62
+      },
+      {
+        "start": "2174+17,32",
+        "end": "2183+08,98",
+        "side": "LE",
+        "whitewashM2": 178.53,
+        "lengthM": 171.66,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      },
+      {
+        "start": "2214+15,68",
+        "end": "2224+19,58",
+        "side": "LD",
+        "whitewashM2": 211.37,
+        "lengthM": 203.24,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      },
+      {
+        "start": "2214+06,10",
+        "end": "2224+15,30",
+        "side": "LE",
+        "whitewashM2": 218.38,
+        "lengthM": 209.98,
+        "type": "STC 88-20",
+        "energyDissipator": "DES 80-240",
+        "sourcePdfPage": 63
+      }
+    ],
+    "tssPoints": [
+      {
+        "station": "1528+12,39",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1528+17,09",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 18.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1533+7,50",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 10.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1533+11,94",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 18.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1573+12,09",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1573+17,32",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 19.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1585+7,92",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1702+0,74",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1702+5,68",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 19.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1723+13,01",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1781+18,85",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1784+10,13",
+        "side": "D",
+        "type": "TSS-200",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1796+6,69",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1805+9,19",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1835+1,74",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1922+19,68",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1922+19,68",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1959+12,45",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "1989+14,34",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 7.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2031+6,92",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2031+13,39",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2032+5,73",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2066+16,09",
+        "side": "E",
+        "type": "TSS-170",
+        "lengthM": 8.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2153+9,21",
+        "side": "D",
+        "type": "TSS-170",
+        "lengthM": 9.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+14,72",
+        "side": "E",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+17,36",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 9.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2215+17,36",
+        "side": "E",
+        "type": "TSS-200",
+        "lengthM": 2.0,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2218+7,10",
+        "side": "D",
+        "type": "TSS 130",
+        "lengthM": 15.5,
+        "sourcePdfPage": 64
+      },
+      {
+        "station": "2244+16,51",
+        "side": "E",
+        "type": "TSS 120",
+        "lengthM": 10.5,
+        "sourcePdfPage": 64
+      }
+    ]
+  }
+}

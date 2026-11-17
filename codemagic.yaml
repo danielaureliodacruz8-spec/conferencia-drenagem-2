@@ -1,0 +1,84 @@
+workflows:
+  android-debug:
+    name: Conferência de Drenagem — APK para teste
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+    scripts:
+      - name: Limpar artefatos antigos
+        script: rm -rf build
+      - name: Gerar estrutura Android
+        script: flutter create --platforms=android --org br.com.stratabasitec --project-name conferencia_drenagem .
+      - name: Instalar dependências
+        script: flutter pub get
+      - name: Declarar permissões, nome do app e minSdk
+        script: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          manifest = Path('android/app/src/main/AndroidManifest.xml')
+          text = manifest.read_text()
+          permissions = [
+              '    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />',
+              '    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />',
+          ]
+          for permission in permissions:
+              if permission not in text:
+                  text = text.replace('<application', permission + '\n    <application', 1)
+          text = re.sub(r'android:label="[^"]+"', 'android:label="Conferência de Drenagem"', text, count=1)
+          gradle_kts = Path('android/app/build.gradle.kts')
+          if gradle_kts.exists():
+              gradle = gradle_kts.read_text()
+              gradle = gradle.replace('minSdk = flutter.minSdkVersion', 'minSdk = 24')
+              gradle_kts.write_text(gradle)
+          gradle_groovy = Path('android/app/build.gradle')
+          if gradle_groovy.exists():
+              gradle = gradle_groovy.read_text()
+              gradle = gradle.replace('minSdkVersion flutter.minSdkVersion', 'minSdkVersion 24')
+              gradle_groovy.write_text(gradle)
+          PY
+      - name: Gerar APK Android versão 0.1.1 (build 2)
+        script: |
+          flutter build apk --debug --build-name=0.1.1 --build-number=2
+          cp build/app/outputs/flutter-apk/app-debug.apk build/app/outputs/flutter-apk/Conferencia-de-Drenagem-v0.1.1-build2.apk
+    artifacts:
+      - build/app/outputs/flutter-apk/Conferencia-de-Drenagem-v0.1.1-build2.apk
+
+  ios-device-check:
+    name: Conferência de Drenagem — compilação iOS para validação
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+    scripts:
+      - name: Limpar artefatos antigos
+        script: rm -rf build
+      - name: Gerar estrutura iOS
+        script: flutter create --platforms=ios --org br.com.stratabasitec --project-name conferencia_drenagem .
+      - name: Instalar dependências
+        script: flutter pub get
+      - name: Configurar permissões de localização, câmera e fotos
+        script: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('ios/Runner/Info.plist')
+          content = path.read_text()
+          entries = [
+              ('NSLocationWhenInUseUsageDescription', 'A localização é usada para registrar as coordenadas e estimar a estaca da vistoria.'),
+              ('NSCameraUsageDescription', 'A câmera é usada para fotografar os dispositivos de drenagem durante a vistoria.'),
+              ('NSPhotoLibraryUsageDescription', 'A galeria é usada para anexar fotos dos dispositivos de drenagem à vistoria.'),
+          ]
+          for key, value in entries:
+              if f'<key>{key}</key>' not in content:
+                  entry = f'    <key>{key}</key>\n    <string>{value}</string>\n'
+                  content = content.replace('</dict>', entry + '</dict>', 1)
+          path.write_text(content)
+          PY
+      - name: Compilar iOS sem assinatura (validação)
+        script: |
+          flutter build ios --release --no-codesign --build-name=0.1.1 --build-number=2
+          cd build/ios/iphoneos
+          /usr/bin/zip -r ../../../Conferencia-de-Drenagem-iOS-v0.1.1-build2-SEM-ASSINATURA.zip Runner.app
+    artifacts:
+      - Conferencia-de-Drenagem-iOS-v0.1.1-build2-SEM-ASSINATURA.zip

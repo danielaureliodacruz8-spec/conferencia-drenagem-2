@@ -1,0 +1,30 @@
+name: conferencia_drenagem
+description: App de campo para registro de fiscalização de drenagem rodoviária.
+publish_to: "none"
+version: 0.1.1+2
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^14.1.2
+  image_picker: ^1.2.4
+  proj4dart: ^3.0.0
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - material-base/app/public/assets/marca-strata-basitec.jpeg
+    - material-base/app/public/assets/marca-go-infra-original.jpeg
+    - material-base/data/processed/device-catalog.json
+    - material-base/data/processed/projects/GO110/point-devices.json
+    - material-base/data/processed/projects/GO110/linear-drainage.json
+    - material-base/data/processed/projects/GO110/surface-devices.json
+    - material-base/data/processed/alignments/GO110-centerline.json
+    - material-base/data/processed/alignments/GO236-centerline.json

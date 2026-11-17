@@ -1,0 +1,42 @@
+{
+  "sharedTypes": [
+    {"id":"BSTC","name":"Bueiro tubular de concreto simples","group":"bueiro"},
+    {"id":"BDTC","name":"Bueiro tubular de concreto duplo","group":"bueiro"},
+    {"id":"BSCC","name":"Bueiro celular de concreto simples","group":"bueiro"},
+    {"id":"BDCC","name":"Bueiro celular de concreto duplo","group":"bueiro"},
+    {"id":"PASSAGEM_FAUNA","name":"Passagem de fauna","group":"bueiro"},
+    {"id":"DPS","name":"Dreno profundo em solo","group":"drenagem_profunda"},
+    {"id":"DPR","name":"Dreno profundo em rocha","group":"drenagem_profunda"},
+    {"id":"DSS","name":"Dreno sub-superficial","group":"drenagem_profunda"},
+    {"id":"DSH","name":"Dreno sub-horizontal","group":"drenagem_profunda"},
+    {"id":"COLCHAO_DRENANTE","name":"Colchão drenante","group":"drenagem_profunda"},
+    {"id":"MFC-01","name":"Meio-fio com sarjeta MFC-01","group":"drenagem_superficial"},
+    {"id":"MFC-03","name":"Meio-fio com sarjeta MFC-03","group":"drenagem_superficial"},
+    {"id":"STC-88-20","name":"Sarjeta triangular de concreto STC 88-20","group":"drenagem_superficial"},
+    {"id":"SZC-60-20","name":"Sarjeta trapezoidal de concreto SZC 60-20","group":"drenagem_superficial"},
+    {"id":"TSS-120","name":"Transposição de segmentos de sarjeta TSS 120","group":"drenagem_superficial"},
+    {"id":"TSS-130","name":"Transposição de segmentos de sarjeta TSS 130","group":"drenagem_superficial"},
+    {"id":"TSS-170","name":"Transposição de segmentos de sarjeta TSS 170","group":"drenagem_superficial"},
+    {"id":"TSS-200","name":"Transposição de segmentos de sarjeta TSS 200","group":"drenagem_superficial"},
+    {"id":"EDA-01A","name":"Entrada d'água EDA-01 A","group":"drenagem_superficial"},
+    {"id":"EDA-05A","name":"Entrada d'água EDA-05 A","group":"drenagem_superficial"},
+    {"id":"EDA-05B","name":"Entrada d'água EDA-05 B","group":"drenagem_superficial"},
+    {"id":"EDA-09A","name":"Entrada d'água EDA-09 A","group":"drenagem_superficial"},
+    {"id":"DAD-60-36","name":"Descida d'água em degraus DAD 60-36","group":"drenagem_superficial"},
+    {"id":"DCD-60-30","name":"Descida d'água em degraus DCD 60-30","group":"drenagem_superficial"},
+    {"id":"DEB","name":"Dissipador de energia DEB","group":"drenagem_superficial"},
+    {"id":"DES","name":"Dissipador de energia DES","group":"drenagem_superficial"},
+    {"id":"DED","name":"Dissipador de energia DED","group":"drenagem_superficial"},
+    {"id":"VPAG","name":"Valeta de proteção de aterro em grama","group":"drenagem_superficial"},
+    {"id":"VPAC","name":"Valeta de proteção de aterro em concreto","group":"drenagem_superficial"},
+    {"id":"VPCC","name":"Valeta de proteção de corte em concreto","group":"drenagem_superficial"},
+    {"id":"DR-7A-1","name":"Canaleta retangular de concreto","group":"drenagem_superficial"},
+    {"id":"CANAL_TRAPEZOIDAL","name":"Canal trapezoidal","group":"drenagem_superficial"},
+    {"id":"BAC","name":"Bacia de captação","group":"drenagem_superficial"}
+  ],
+  "roadwayRules": [
+    {"roadway":"GO-110","locationMode":"from_project","sourceProject":"GO-110 drainage PDFs"},
+    {"roadway":"GO-236","locationMode":"manual_at_device_selection","sourceProject":null,"note":"Use the shared device type list. The field user will enter/select the device location manually; do not import GO-110 station locations into GO-236."}
+  ]
+}
+

@@ -1,0 +1,27 @@
+{
+  "alignments": [
+    {
+      "id": "GO236",
+      "file": "../source/alignments/GO236.xml",
+      "alignmentName": "20261027_EIXO_GO236_R",
+      "lengthMeters": 63377.033519,
+      "stationStart": 0,
+      "crsLabel": "SA-SIR-23S",
+      "coordinateTupleOrder": "northing_easting",
+      "coordinateTupleOrderStatus": "inferred_from_numeric_ranges_confirm_before_use",
+      "stationEquations": 0
+    },
+    {
+      "id": "GO110",
+      "file": "../source/alignments/GO110.xml",
+      "alignmentName": "Eixo_Principal_GO110",
+      "lengthMeters": 14914.221,
+      "stationStart": 1500,
+      "crsLabel": "UTM23S / SIRGAS2000",
+      "coordinateTupleOrder": "easting_northing",
+      "coordinateTupleOrderStatus": "inferred_from_numeric_ranges_confirm_before_use",
+      "stationEquations": 2
+    }
+  ]
+}
+

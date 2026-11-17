@@ -1,0 +1,339 @@
+{
+  "project": "GO-110",
+  "sourceScope": "Projeto Executivo parcial, estacas 1500 a 2249+14,221",
+  "sourceSchedule": "GO-110-PE-DR-084/085; PDF profundo/OAC, páginas 97-98",
+  "profiles": "PDF profundo/OAC, páginas 36-48",
+  "stationFormat": "estaca+offset_em_metros",
+  "structures": [
+    {
+      "id": "B49",
+      "station": "1555+02,01",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BDCC 2,00 x 2,00 m",
+      "side": "LE",
+      "lengthMeters": 18.8,
+      "action": "Construir projetado",
+      "notes": "Tabela indica 18,80 m; perfil gráfico indica 18,81 m. Conferir valor final no projeto executivo."
+    },
+    {
+      "id": "B50",
+      "station": "1585+02,50",
+      "class": "grota",
+      "existingType": "BSCC 3,90 x 2,70 m",
+      "designType": "BSCC 3,90 x 2,70 m",
+      "side": "LD",
+      "lengthMeters": 4.99,
+      "action": "Prolongamento de bueiro existente",
+      "notes": "4,99 m é o prolongamento indicado no quadro; o perfil também mostra trecho existente de 24,31 m e segmento novo moldado localmente de 5,00 m."
+    },
+    {
+      "id": "B51",
+      "station": "1608+04,88",
+      "class": "grota",
+      "existingType": "Ponte",
+      "designType": "BDCC 2,50 x 2,50 m",
+      "side": "LD",
+      "lengthMeters": 22.94,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B52",
+      "station": "1627+05,38",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 33.94,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B53",
+      "station": "1663+18,00",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 18.53,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B54",
+      "station": "1682+11,57",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 25.33,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B55",
+      "station": "1716+07,95",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 57.72,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B56",
+      "station": "1772+10,75",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 35.58,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B57",
+      "station": "1798+10,05",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 24.91,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B58",
+      "station": "1901+12,45",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 19.2,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B59",
+      "station": "1911+01,62",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 26.17,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B60",
+      "station": "1963+02,92",
+      "class": "grota",
+      "existingType": "-",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 28.97,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B61",
+      "station": "2001+00,00",
+      "class": "grota",
+      "existingType": "-",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 27.61,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B62",
+      "station": "2056+13,60",
+      "class": "grota",
+      "existingType": "Ponte",
+      "designType": "BSCC 2,00 x 2,00 m",
+      "side": "LD",
+      "lengthMeters": 27.47,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B63",
+      "station": "2088+09,27",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 28.74,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B64",
+      "station": "2102+01,76",
+      "class": "grota",
+      "existingType": "BSTC Ø0,60 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 18.32,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "B65",
+      "station": "2106+05,96",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BDTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 25.68,
+      "action": "Construir projetado; remover bueiro existente",
+      "notes": "Tabela QDE-084 soma 25,68 m; tabela de escavação QDE-089 informa 25,88 m. Validar discrepância antes de usar comprimento para medição."
+    },
+    {
+      "id": "B66",
+      "station": "2190+11,60",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 22.43,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "B67",
+      "station": "2241+07,94",
+      "class": "grota",
+      "existingType": "BSTC Ø1,00 m",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LE",
+      "lengthMeters": 36.32,
+      "action": "Construir projetado; remover bueiro existente"
+    },
+    {
+      "id": "GREIDE-1591",
+      "station": "1591+17,51",
+      "class": "greide",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 26.15,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "GREIDE-1818",
+      "station": "1818+05,06",
+      "class": "greide",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 23.78,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "TRANSPOSICAO-1965",
+      "station": "1965+08,79",
+      "stationRange": "1965+07,16 a 1966+01,41",
+      "class": "transposição",
+      "designType": "BSTC Ø1,00 m",
+      "side": "LD",
+      "lengthMeters": 14.94,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-1610",
+      "station": "1610+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSCC 2,00 x 2,00 m",
+      "side": "LD",
+      "lengthMeters": 21.27,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-1718",
+      "station": "1718+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSTC Ø1,50 m",
+      "side": "LE",
+      "lengthMeters": 24.38,
+      "action": "Construir projetado"
+    },
+    {
+      "id": "FAUNA-2006",
+      "station": "2006+00,00",
+      "class": "passagem de fauna",
+      "designType": "BSTC Ø1,50 m",
+      "side": "LD",
+      "lengthMeters": 17.73,
+      "action": "Construir projetado"
+    }
+  ],
+  "catchmentBasins": [
+    {
+      "station": "1555+02,01",
+      "type": "BAC06",
+      "side": "LE",
+      "heightMeters": 1.15,
+      "adaptedTo": "BDCC 2,00 x 2,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1591+17,51",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 0.19,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1663+18,00",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.33,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1682+11,57",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.54,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1716+07,95",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 0.54,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1772+10,75",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.43,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1798+10,05",
+      "type": "BAC02",
+      "side": "LE",
+      "heightMeters": 1.19,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "1818+05,06",
+      "type": "BAC02",
+      "side": "LD",
+      "heightMeters": 1.06,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "2106+05,96",
+      "type": "BAC05",
+      "side": "LD",
+      "heightMeters": 1.64,
+      "adaptedTo": "BDTC Ø1,00 m",
+      "sourcePdfPage": 101
+    },
+    {
+      "station": "2190+11,60",
+      "type": "BAC02",
+      "side": "LE",
+      "heightMeters": 0.96,
+      "adaptedTo": "BSTC Ø1,00 m",
+      "sourcePdfPage": 101
+    }
+  ]
+}
