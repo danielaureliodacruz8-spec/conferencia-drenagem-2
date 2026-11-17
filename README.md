@@ -4,7 +4,7 @@ Cópia independente do projeto Conferência de Drenagem 1, preparada para valida
 
 ## Gerar para iPhone pelo CodeMagic
 
-Há dois workflows iOS no arquivo `codemagic.yaml`:
+Os dois workflows iOS usam **Xcode 27.2** no Mac na nuvem do CodeMagic. Há dois workflows iOS no arquivo `codemagic.yaml`:
 
 ### 1. `ios-unsigned-check` — validar se compila
 
